@@ -10,23 +10,32 @@ import javax.swing.ButtonModel;
 
 public class QuestoesController {
 
-    private QuestoesDAO questoesDAO;
-    private QuestoesView questoesView;
+	private QuestoesDAO questoesDAO;
+	private QuestoesView questoesView;
 
-    public QuestoesController(QuestoesView questoesView) {
-        this.questoesView = questoesView;
-        this.questoesDAO = new QuestoesDAO();
+	public QuestoesController(QuestoesView questoesView) {
+		this.questoesView = questoesView;
+		this.questoesDAO = new QuestoesDAO();
 
-        questoesView.btnMatematica.addActionListener(e -> {
-            List<QuestoesVO> questoesList = questoesDAO.obterQuestoes();
-            questoesView.exibirQuestoes(questoesList);
-        });
+		questoesView.btnMatematica.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("MatematicaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
 
-        questoesView.btnFinalizar.addActionListener(e -> {
-            QuestoesController controller = new QuestoesController(questoesView);
-            int pontuacao = questoesView.calcularPontuacao();
-            questoesView.mostrarPontuacao(pontuacao);
-        });
-        }
+		questoesView.btnPortugues.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("PortuguesPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
+		
+		questoesView.btnLiteratura.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("LiteraturaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
+
+		questoesView.btnFinalizar.addActionListener(e -> {
+			QuestoesController controller = new QuestoesController(questoesView);
+			int pontuacao = questoesView.calcularPontuacao();
+			questoesView.mostrarPontuacao(pontuacao);
+		});
+	}
 }
-	

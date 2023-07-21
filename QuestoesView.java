@@ -20,11 +20,14 @@ import javax.swing.JScrollPane;
 public class QuestoesView extends JPanel {
 
     public JButton btnMatematica;
+    public JButton btnPortugues;
+    public JButton btnLiteratura;
     public JButton btnFinalizar;
     private JScrollPane scrollpane;
     Map<QuestoesVO, ButtonGroup> buttonGroups;
     private QuestoesDAO questoesDAO;
     private int pontuacao;
+    String materia;
 
 
     public QuestoesView(QuestoesDAO questoesDAO) {
@@ -39,6 +42,10 @@ public class QuestoesView extends JPanel {
 
         btnMatematica = new JButton("Matemática");
         add(btnMatematica);
+        btnPortugues = new JButton("Português");
+        add(btnPortugues);
+        btnLiteratura = new JButton("Literatura");
+        add(btnLiteratura);
         btnFinalizar = new JButton("Finalizar");
         add(btnFinalizar, BorderLayout.SOUTH);
         btnFinalizar.setVisible(false);
@@ -47,7 +54,7 @@ public class QuestoesView extends JPanel {
     }
 
     public void exibirQuestoes(List<QuestoesVO> questoesList) {
-        btnMatematica.setVisible(false);
+    	removeAll();
         btnFinalizar.setVisible(true);
 
         JPanel questoesPanel = new JPanel(new GridLayout(0, 1));

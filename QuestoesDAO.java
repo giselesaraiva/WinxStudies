@@ -11,6 +11,7 @@ import java.util.List;
 public class QuestoesDAO {
 
     private Connection conn;
+    String materiaDAO;
 
     public QuestoesDAO() {
         try {
@@ -20,17 +21,18 @@ public class QuestoesDAO {
         }
     }
 
-    public List<QuestoesVO> obterQuestoes() {
+    public List<QuestoesVO> obterQuestoes(String materia) {
     	
         List<QuestoesVO> questoesList = new ArrayList<>();
 
         try {
         	
-            String query = "SELECT pergunta, A, B, C, D, E, resposta FROM matematicaPSC1";
+            String query = "SELECT pergunta, A, B, C, D, E, resposta FROM "+materia;
             PreparedStatement ps = conn.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
+    
                 String pergunta = rs.getString("pergunta");
                 String a = rs.getString("A");
                 String b = rs.getString("B");
