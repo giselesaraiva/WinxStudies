@@ -30,48 +30,38 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        MATEMATICA = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        PORTUGUES = new javax.swing.JLabel();
-        LITERATURA = new javax.swing.JLabel();
-        FISICA = new javax.swing.JLabel();
-        HISTORIA = new javax.swing.JLabel();
-        GEOGRAFIA = new javax.swing.JLabel();
-        QUIMICA = new javax.swing.JLabel();
-        BIOLOGIA = new javax.swing.JLabel();
-        REDAÇÃO = new javax.swing.JLabel();
+        MATEMATICA = new javax.swing.JButton();
+        PORTUGUES = new javax.swing.JButton();
+        LITERATURA = new javax.swing.JButton();
+        FISICA = new javax.swing.JButton();
+        QUIMICA = new javax.swing.JButton();
+        BIOLOGIA = new javax.swing.JButton();
+        GEOGRAFIA = new javax.swing.JButton();
+        HISTORIA = new javax.swing.JButton();
+        REDACAO = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        MATEMATICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Frame 15.png")); // NOI18N
-        MATEMATICA.setText("jLabel1");
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 60)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(70, 136, 136));
+        jLabel2.setText("SELECIONE A MATÉRIA:");
+
+        MATEMATICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Mat.png")); // NOI18N
+        MATEMATICA.setContentAreaFilled(false);
         MATEMATICA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MATEMATICAMouseClicked(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 60)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(70, 136, 136));
-        jLabel2.setText("SELECIONE A MATÉRIA:");
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
-            }
-        });
-
         PORTUGUES.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Portugues.png")); // NOI18N
-        PORTUGUES.setText("jLabel3");
-        PORTUGUES.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PORTUGUESMouseClicked(evt);
-            }
-        });
+        PORTUGUES.setContentAreaFilled(false);
 
         LITERATURA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Literatura.png")); // NOI18N
-        LITERATURA.setText("jLabel4");
+        LITERATURA.setContentAreaFilled(false);
         LITERATURA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 LITERATURAMouseClicked(evt);
@@ -79,26 +69,15 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
         });
 
         FISICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Fisica.png")); // NOI18N
-        FISICA.setText("jLabel5");
-
-        HISTORIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Historia.png")); // NOI18N
-        HISTORIA.setText("jLabel6");
-        HISTORIA.addMouseListener(new java.awt.event.MouseAdapter() {
+        FISICA.setContentAreaFilled(false);
+        FISICA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HISTORIAMouseClicked(evt);
-            }
-        });
-
-        GEOGRAFIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Geografia.png")); // NOI18N
-        GEOGRAFIA.setText("jLabel7");
-        GEOGRAFIA.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                GEOGRAFIAMouseClicked(evt);
+                FISICAMouseClicked(evt);
             }
         });
 
         QUIMICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Quimica.png")); // NOI18N
-        QUIMICA.setText("jLabel8");
+        QUIMICA.setContentAreaFilled(false);
         QUIMICA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 QUIMICAMouseClicked(evt);
@@ -106,18 +85,35 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
         });
 
         BIOLOGIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Biologia.png")); // NOI18N
-        BIOLOGIA.setText("jLabel9");
+        BIOLOGIA.setContentAreaFilled(false);
         BIOLOGIA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BIOLOGIAMouseClicked(evt);
             }
         });
 
-        REDAÇÃO.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Redação.png")); // NOI18N
-        REDAÇÃO.setText("jLabel10");
-        REDAÇÃO.addMouseListener(new java.awt.event.MouseAdapter() {
+        GEOGRAFIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Geografia.png")); // NOI18N
+        GEOGRAFIA.setContentAreaFilled(false);
+        GEOGRAFIA.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                REDAÇÃOMouseClicked(evt);
+                GEOGRAFIAMouseClicked(evt);
+            }
+        });
+
+        HISTORIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Historia.png")); // NOI18N
+        HISTORIA.setContentAreaFilled(false);
+        HISTORIA.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HISTORIAMouseClicked(evt);
+            }
+        });
+
+        REDACAO.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Redação.png")); // NOI18N
+        REDACAO.setActionCommand("");
+        REDACAO.setContentAreaFilled(false);
+        REDACAO.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                REDACAOMouseClicked(evt);
             }
         });
 
@@ -126,65 +122,61 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(558, 558, 558)
-                                        .addComponent(FISICA, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(MATEMATICA, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(GEOGRAFIA, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(HISTORIA, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(PORTUGUES, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(LITERATURA, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(183, 183, 183)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(QUIMICA, javax.swing.GroupLayout.PREFERRED_SIZE, 376, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BIOLOGIA, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(REDAÇÃO, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1153, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LITERATURA)
+                    .addComponent(MATEMATICA)
+                    .addComponent(PORTUGUES))
+                .addGap(98, 98, 98)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(FISICA)
+                    .addComponent(BIOLOGIA)
+                    .addComponent(QUIMICA, javax.swing.GroupLayout.Alignment.LEADING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 254, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(HISTORIA)
+                    .addComponent(GEOGRAFIA)
+                    .addComponent(REDACAO))
+                .addGap(78, 78, 78))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel2)
-                .addGap(179, 179, 179)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(121, 121, 121)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(MATEMATICA)
                     .addComponent(FISICA)
                     .addComponent(GEOGRAFIA))
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PORTUGUES)
-                    .addComponent(QUIMICA)
-                    .addComponent(HISTORIA))
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LITERATURA)
-                    .addComponent(BIOLOGIA)
-                    .addComponent(REDAÇÃO))
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addGap(50, 50, 50)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(QUIMICA)
+                            .addComponent(PORTUGUES))
+                        .addGap(57, 57, 57)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(LITERATURA)
+                            .addComponent(BIOLOGIA)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(HISTORIA)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(REDACAO)))
+                .addContainerGap(295, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,21 +187,16 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MATEMATICAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MATEMATICAMouseClicked
-       /*NewJFrame1 loga=new NewJFrame1();
-       loga.setVisible(true); */
+        // TODO add your handling code here:
     }//GEN-LAST:event_MATEMATICAMouseClicked
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-         
-    }//GEN-LAST:event_jLabel2MouseClicked
-
-    private void PORTUGUESMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PORTUGUESMouseClicked
-       
-    }//GEN-LAST:event_PORTUGUESMouseClicked
-
     private void LITERATURAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LITERATURAMouseClicked
-       
+        // TODO add your handling code here:
     }//GEN-LAST:event_LITERATURAMouseClicked
+
+    private void FISICAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FISICAMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FISICAMouseClicked
 
     private void QUIMICAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QUIMICAMouseClicked
         // TODO add your handling code here:
@@ -227,9 +214,9 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_HISTORIAMouseClicked
 
-    private void REDAÇÃOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_REDAÇÃOMouseClicked
+    private void REDACAOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_REDACAOMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_REDAÇÃOMouseClicked
+    }//GEN-LAST:event_REDACAOMouseClicked
 
     /**
      * @param args the command line arguments
@@ -267,15 +254,15 @@ public class EscolhaQuestoes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BIOLOGIA;
-    private javax.swing.JLabel FISICA;
-    private javax.swing.JLabel GEOGRAFIA;
-    private javax.swing.JLabel HISTORIA;
-    private javax.swing.JLabel LITERATURA;
-    private javax.swing.JLabel MATEMATICA;
-    private javax.swing.JLabel PORTUGUES;
-    private javax.swing.JLabel QUIMICA;
-    private javax.swing.JLabel REDAÇÃO;
+    private javax.swing.JButton BIOLOGIA;
+    private javax.swing.JButton FISICA;
+    private javax.swing.JButton GEOGRAFIA;
+    private javax.swing.JButton HISTORIA;
+    private javax.swing.JButton LITERATURA;
+    private javax.swing.JButton MATEMATICA;
+    private javax.swing.JButton PORTUGUES;
+    private javax.swing.JButton QUIMICA;
+    private javax.swing.JButton REDACAO;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
