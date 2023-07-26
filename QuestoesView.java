@@ -16,6 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton; 
 import javax.swing.JScrollPane;
+import javax.swing.*;
 
 public class QuestoesView extends JPanel {
 
@@ -27,6 +28,7 @@ public class QuestoesView extends JPanel {
     public JButton btnBiologia;
     public JButton btnQuimica;
     public JButton btnFisica;
+    public JButton btnRedacao;
     public JButton btnFinalizar;
     private JScrollPane scrollpane;
     Map<QuestoesVO, ButtonGroup> buttonGroups;
