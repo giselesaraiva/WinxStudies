@@ -1,5 +1,4 @@
 package Testednv;
-
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Map;
@@ -13,54 +12,72 @@ public class QuestoesController {
 	private QuestoesDAO questoesDAO;
 	private QuestoesView questoesView;
 
-	public QuestoesController(QuestoesView questoesView) {
-		this.questoesView = questoesView;
+	public QuestoesController(QuestoesView questoesView2) {
+		this.questoesView = questoesView2;
 		this.questoesDAO = new QuestoesDAO();
 
-		questoesView.btnMatematica.addActionListener(e -> {
+		questoesView2.MATEMATICA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("MatematicaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 
-		questoesView.btnPortugues.addActionListener(e -> {
+		questoesView2.PORTUGUES.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("PortuguesPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 		
-		questoesView.btnLiteratura.addActionListener(e -> {
+		questoesView2.LITERATURA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("LiteraturaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 		
-		questoesView.btnHistoria.addActionListener(e -> {
+		questoesView2.HISTORIA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("HistoriaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 
-		questoesView.btnGeografia.addActionListener(e -> {
+		questoesView2.GEOGRAFIA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("GeografiaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 		
-		questoesView.btnBiologia.addActionListener(e -> {
+		questoesView2.BIOLOGIA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("BiologiaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 		
-		questoesView.btnQuimica.addActionListener(e -> {
+		questoesView2.QUIMICA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("QuimicaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 		
-		questoesView.btnFisica.addActionListener(e -> {
+		questoesView2.FISICA.addActionListener(e -> {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("FisicaPSC1");
-			questoesView.exibirQuestoes(questoesList);
+			questoesView2.exibirQuestoes(questoesList);
+			
+		});
+		
+		questoesView2.REDACAO.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("RedacaoPSC1");
+			questoesView2.exibirQuestoes(questoesList);
+			
 		});
 
-		questoesView.btnFinalizar.addActionListener(e -> {
-			QuestoesController controller = new QuestoesController(questoesView);
-			int pontuacao = questoesView.calcularPontuacao();
-			questoesView.mostrarPontuacao(pontuacao);
+		questoesView2.btnFinalizar.addActionListener(e -> {
+			
+			int pontuacao = questoesView2.calcularPontuacao();
+			questoesView2.mostrarPontuacao(pontuacao);
 		});
 	}
+	
+	
+	    
+
 }

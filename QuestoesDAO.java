@@ -27,7 +27,7 @@ public class QuestoesDAO {
 
         try {
         	
-            String query = "SELECT pergunta, A, B, C, D, E, resposta FROM "+materia;
+            String query = "SELECT pergunta, A, B, C, D, E, resposta FROM "+ materia;
             PreparedStatement ps = conn.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
 
