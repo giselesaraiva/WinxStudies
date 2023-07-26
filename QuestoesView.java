@@ -22,6 +22,11 @@ public class QuestoesView extends JPanel {
     public JButton btnMatematica;
     public JButton btnPortugues;
     public JButton btnLiteratura;
+    public JButton btnHistoria;
+    public JButton btnGeografia;
+    public JButton btnBiologia;
+    public JButton btnQuimica;
+    public JButton btnFisica;
     public JButton btnFinalizar;
     private JScrollPane scrollpane;
     Map<QuestoesVO, ButtonGroup> buttonGroups;
@@ -46,6 +51,16 @@ public class QuestoesView extends JPanel {
         add(btnPortugues);
         btnLiteratura = new JButton("Literatura");
         add(btnLiteratura);
+        btnHistoria = new JButton("História");
+        add(btnHistoria);
+        btnGeografia = new JButton("Geografia");
+        add(btnGeografia);
+        btnBiologia = new JButton("Biologia");
+        add(btnBiologia);
+        btnQuimica = new JButton("Química");
+        add(btnQuimica);
+        btnFisica = new JButton("Física");
+        add(btnFisica);
         btnFinalizar = new JButton("Finalizar");
         add(btnFinalizar, BorderLayout.SOUTH);
         btnFinalizar.setVisible(false);

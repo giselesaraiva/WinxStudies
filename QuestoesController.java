@@ -31,6 +31,31 @@ public class QuestoesController {
 			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("LiteraturaPSC1");
 			questoesView.exibirQuestoes(questoesList);
 		});
+		
+		questoesView.btnHistoria.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("HistoriaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
+
+		questoesView.btnGeografia.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("GeografiaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
+		
+		questoesView.btnBiologia.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("BiologiaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
+		
+		questoesView.btnQuimica.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("QuimicaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
+		
+		questoesView.btnFisica.addActionListener(e -> {
+			List<QuestoesVO> questoesList = questoesDAO.obterQuestoes("FisicaPSC1");
+			questoesView.exibirQuestoes(questoesList);
+		});
 
 		questoesView.btnFinalizar.addActionListener(e -> {
 			QuestoesController controller = new QuestoesController(questoesView);
