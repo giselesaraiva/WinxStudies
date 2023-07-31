@@ -5,6 +5,7 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.text.ParseException;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +15,7 @@ import javax.swing.AbstractButton;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
@@ -27,6 +29,7 @@ public class QuestoesView extends javax.swing.JFrame {
     	
         initComponents();
         QuestoesController con = new QuestoesController(this);
+        
          setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -173,6 +176,10 @@ public class QuestoesView extends javax.swing.JFrame {
     
     public void exibirQuestoes(List<QuestoesVO> questoesList) {
     	System.out.println("Funcionando");
+    	
+    	idD = JOptionPane.showInputDialog(null, "Digite seu id: ");
+    	
+    	id = Integer.parseInt(idD);
 
     	jPanel1.removeAll();
     	jPanel1.setLayout(new GridLayout(0,1));
@@ -233,6 +240,7 @@ public class QuestoesView extends javax.swing.JFrame {
             }
         }
         return pontuacao;
+        
     }
     
     public String getSelectedButtonText(ButtonGroup buttonGroup) {
@@ -252,8 +260,11 @@ public class QuestoesView extends javax.swing.JFrame {
         jPanel1.add(pontuacaoLabel);
         jPanel1.revalidate();
         jPanel1.repaint();	
+        QuestoesDAO dao = new QuestoesDAO();
+        dao.progresso(id, pontuacao);
     }
 
+    
     
     /**
      * @param args the command line arguments
@@ -316,7 +327,9 @@ public class QuestoesView extends javax.swing.JFrame {
     public JButton btnFinalizar;
     private JScrollPane scrollpane;
     Map<QuestoesVO, ButtonGroup> buttonGroups;
-    private QuestoesDAO questoesDAO;
+    public QuestoesDAO questoesDAO;
     private int pontuacao;
+    public String idD;
+    public int id;
     // End of variables declaration//GEN-END:variables
 }
