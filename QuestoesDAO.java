@@ -53,18 +53,20 @@ public class QuestoesDAO {
         return questoesList;
     }
     
-    public void progresso(int pontuacao, int id) {
+    public void progresso(String materia, int id, int pontuacao) {
     	
     	try {
 			
-			
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testequestoes","root","souza0868");
-			
-			String cadastrar = "insert into progresso (pk_usuario, pontuacao) values ("+id+","+pontuacao+")";
-			
-			PreparedStatement ps = conn.prepareStatement(cadastrar);
-			
-			int check = ps.executeUpdate();
+		
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testequestoes", "root", "souza0868");
+	        String cadastrar = "insert into progresso (pk_usuario, pontuacao" + materia + ") values (?, ?)";
+	        PreparedStatement ps = conn.prepareStatement(cadastrar);
+	        
+	        ps.setInt(1, id);
+	        ps.setInt(2, pontuacao);
+	        
+	        int check = ps.executeUpdate();
+	        
 			if(check<=0) {
 				
 				System.out.println("Erro no cadastro da pontuação");

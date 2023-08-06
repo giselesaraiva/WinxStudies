@@ -45,15 +45,15 @@ public class QuestoesView extends javax.swing.JFrame {
     	
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        MATEMATICA = new javax.swing.JButton();
-        PORTUGUES = new javax.swing.JButton();
-        LITERATURA = new javax.swing.JButton();
-        FISICA = new javax.swing.JButton();
-        QUIMICA = new javax.swing.JButton();
-        BIOLOGIA = new javax.swing.JButton();
-        GEOGRAFIA = new javax.swing.JButton();
-        HISTORIA = new javax.swing.JButton();
-        REDACAO = new javax.swing.JButton();
+        Mat = new javax.swing.JButton();
+        Port = new javax.swing.JButton();
+        Lit = new javax.swing.JButton();
+        Fis = new javax.swing.JButton();
+        Qui = new javax.swing.JButton();
+        Bio = new javax.swing.JButton();
+        Geo = new javax.swing.JButton();
+        His = new javax.swing.JButton();
+        Red = new javax.swing.JButton();
         btnFinalizar = new JButton("Finalizar");
         add(btnFinalizar, BorderLayout.SOUTH);
         btnFinalizar.setVisible(false);
@@ -66,41 +66,42 @@ public class QuestoesView extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(70, 136, 136));
         jLabel2.setText("SELECIONE A MATÉRIA:");
 
-        MATEMATICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Mat.png")); // NOI18N
-        MATEMATICA.setContentAreaFilled(false);
-       
+        Mat.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Mat.png")); // NOI18N
+        Mat.setContentAreaFilled(false);
+        Mat.setName("Mat");
 
-        PORTUGUES.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Portugues.png")); // NOI18N
-        PORTUGUES.setContentAreaFilled(false);
+        Port.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Portugues.png")); // NOI18N
+        Port.setContentAreaFilled(false);
+        Port.setName("Port");
 
-        LITERATURA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Literatura.png")); // NOI18N
-        LITERATURA.setContentAreaFilled(false);
-        
+        Lit.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Literatura.png")); // NOI18N
+        Lit.setContentAreaFilled(false);
+        Lit.setName("Lit");
 
-        FISICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Fisica.png")); // NOI18N
-        FISICA.setContentAreaFilled(false);
-        
+        Fis.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Fisica.png")); // NOI18N
+        Fis.setContentAreaFilled(false);
+        Fis.setName("Fis");
 
-        QUIMICA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Quimica.png")); // NOI18N
-        QUIMICA.setContentAreaFilled(false);
-        
+        Qui.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Quimica.png")); // NOI18N
+        Qui.setContentAreaFilled(false);
+        Qui.setName("Qui");
 
-        BIOLOGIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Biologia.png")); // NOI18N
-        BIOLOGIA.setContentAreaFilled(false);
-        
+        Bio.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Biologia.png")); // NOI18N
+        Bio.setContentAreaFilled(false);
+        Bio.setName("Bio");
 
-        GEOGRAFIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Geografia.png")); // NOI18N
-        GEOGRAFIA.setContentAreaFilled(false);
-       
+        Geo.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Geografia.png")); // NOI18N
+        Geo.setContentAreaFilled(false);
+        Geo.setName("Geo");
 
-        HISTORIA.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Historia.png")); // NOI18N
-        HISTORIA.setContentAreaFilled(false);
-        
+        His.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Historia.png")); // NOI18N
+        His.setContentAreaFilled(false);
+        His.setName("His");
 
-        REDACAO.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Redação.png")); // NOI18N
-        REDACAO.setActionCommand("");
-        REDACAO.setContentAreaFilled(false);
-        
+        Red.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Desktop\\FERNANDA ESCOLA 2023\\POO\\TesteLogin\\Redação.png")); // NOI18N
+        Red.setActionCommand("");
+        Red.setContentAreaFilled(false);
+        Red.setName("Red");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -113,19 +114,19 @@ public class QuestoesView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(72, 72, 72)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LITERATURA)
-                    .addComponent(MATEMATICA)
-                    .addComponent(PORTUGUES))
+                    .addComponent(Lit)
+                    .addComponent(Mat)
+                    .addComponent(Port))
                 .addGap(98, 98, 98)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(FISICA)
-                    .addComponent(BIOLOGIA)
-                    .addComponent(QUIMICA, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(Fis)
+                    .addComponent(Bio)
+                    .addComponent(Qui, javax.swing.GroupLayout.Alignment.LEADING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 254, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(HISTORIA)
-                    .addComponent(GEOGRAFIA)
-                    .addComponent(REDACAO))
+                    .addComponent(His)
+                    .addComponent(Geo)
+                    .addComponent(Red))
                 .addGap(78, 78, 78))
         );
         jPanel1Layout.setVerticalGroup(
@@ -135,23 +136,23 @@ public class QuestoesView extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(121, 121, 121)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(MATEMATICA)
-                    .addComponent(FISICA)
-                    .addComponent(GEOGRAFIA))
+                    .addComponent(Mat)
+                    .addComponent(Fis)
+                    .addComponent(Geo))
                 .addGap(50, 50, 50)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(QUIMICA)
-                            .addComponent(PORTUGUES))
+                            .addComponent(Qui)
+                            .addComponent(Port))
                         .addGap(57, 57, 57)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(LITERATURA)
-                            .addComponent(BIOLOGIA)))
+                            .addComponent(Lit)
+                            .addComponent(Bio)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(HISTORIA)
+                        .addComponent(His)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(REDACAO)))
+                        .addComponent(Red)))
                 .addContainerGap(295, Short.MAX_VALUE))
         );
 
@@ -174,12 +175,13 @@ public class QuestoesView extends javax.swing.JFrame {
     
     
     
-    public void exibirQuestoes(List<QuestoesVO> questoesList) {
+    public void exibirQuestoes(List <QuestoesVO> questoesList) {
     	System.out.println("Funcionando");
     	
     	idD = JOptionPane.showInputDialog(null, "Digite seu id: ");
     	
     	id = Integer.parseInt(idD);
+    	System.out.println(id);
 
     	jPanel1.removeAll();
     	jPanel1.setLayout(new GridLayout(0,1));
@@ -226,17 +228,19 @@ public class QuestoesView extends javax.swing.JFrame {
 
         jPanel1.revalidate();
         jPanel1.repaint();
-        pontuacao = 0;
+        pontuacao = calcularPontuacao();
     }
 
     public int calcularPontuacao() {
-        int pontuacao = 0;
+        
         for (QuestoesVO questao : buttonGroups.keySet()) {
             ButtonGroup buttonGroup = buttonGroups.get(questao);
             String respostaSelecionada = getSelectedButtonText(buttonGroup);
 
             if (respostaSelecionada != null && respostaSelecionada.equals(questao.getResposta())) {
+            	
                 pontuacao++;
+                
             }
         }
         return pontuacao;
@@ -254,14 +258,20 @@ public class QuestoesView extends javax.swing.JFrame {
         return null;
     }
     
-    public void mostrarPontuacao(int pontuacao) {
+    public void mostrarPontuacao(String materia, int id) {
+    	
+    	
+    	System.out.println(id);
+    	
+    	dao.progresso(materia, id, pontuacao);
     	jPanel1.removeAll();
         JLabel pontuacaoLabel = new JLabel("Pontuação: " + pontuacao);
         jPanel1.add(pontuacaoLabel);
         jPanel1.revalidate();
         jPanel1.repaint();	
-        QuestoesDAO dao = new QuestoesDAO();
-        dao.progresso(id, pontuacao);
+       
+        
+       
     }
 
     
@@ -296,40 +306,32 @@ public class QuestoesView extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                QuestoesDAO questoesDAO = new QuestoesDAO(); // Criar uma instância de QuestoesDAO
+                
                 new QuestoesView().setVisible(true);
             }
         });
     }
 
-    private void limparJFrame(Container container) {
-        Component[] components = container.getComponents();
-        for (Component component : components) {
-            if (component instanceof Container) {
-                limparJFrame((Container) component);
-            }
-            container.remove(component);
-        }
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton BIOLOGIA;
-    public javax.swing.JButton FISICA;
-    public javax.swing.JButton GEOGRAFIA;
-    public javax.swing.JButton HISTORIA;
-    public javax.swing.JButton LITERATURA;
-    public javax.swing.JButton MATEMATICA;
-    public javax.swing.JButton PORTUGUES;
-    public javax.swing.JButton QUIMICA;
-    public javax.swing.JButton REDACAO;
+    public javax.swing.JButton Bio;
+    public javax.swing.JButton Fis;
+    public javax.swing.JButton Geo;
+    public javax.swing.JButton His;
+    public javax.swing.JButton Lit;
+    public javax.swing.JButton Mat;
+    public javax.swing.JButton Port;
+    public javax.swing.JButton Qui;
+    public javax.swing.JButton Red;
     public javax.swing.JLabel jLabel2;
     public javax.swing.JPanel jPanel1;
     public JButton btnFinalizar;
     private JScrollPane scrollpane;
     Map<QuestoesVO, ButtonGroup> buttonGroups;
     public QuestoesDAO questoesDAO;
-    private int pontuacao;
+    public int pontuacao;
     public String idD;
     public int id;
+    public QuestoesDAO dao = new QuestoesDAO();
     // End of variables declaration//GEN-END:variables
 }
