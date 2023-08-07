@@ -1,0 +1,679 @@
+create database testeQuestoes;
+use testeQuestoes;
+ 
+create table MatematicaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(1000),
+    A varchar(200),
+    B varchar(200),
+    C varchar(200),
+    D varchar(200),
+    E varchar(200),
+    resposta char(200) not null
+    
+);
+
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Subtraindo-se 16 unidades de um número real positivo, seu logaritmo em base 5 diminui uma unidade. Então esse número deve ser igual a: ","20","34","48","56","60","20");
+
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Sejam as funções 𝑓: ℝ → ℝ ; 𝑓(𝑥) = 4𝑥 + 2𝑘 e 𝑔: ℝ → ℝ ; 𝑔(𝑥) = −3x + 2, onde 𝑘 ∈ ℝ. Sabendo que 2 ∙ 𝑔(1) − 𝑓(1) = 6, então o valor de 𝑘 deve ser igual a: ","7","8","12","-4","-6","-6");
+
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Uma piscina tem 30 𝑚 de comprimento, 15 𝑚 de largura e 2 𝑚 de profundidade. A distância que uma pessoa deva nadar na superfície, em linha reta, de um canto ao canto oposto dessa piscina, deve ser de: 
+","20 𝑚","12√6 𝑚","25 𝑚","15√5 𝑚","30 𝑚","15√5 𝑚");
+
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("As medidas dos lados de um triângulo retângulo formam uma Progressão Aritmética de razão 6. Então as medidas dos lados desse triângulo, em cm, são: 
+","(18, 24, 30)","(6, 12, 18)","(12, 18, 24)","(24, 30, 36)","(30, 36, 42)","(18, 24, 30)");
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere as funções: 
+𝑓: ℝ+ ∗ → ℝ ; 𝑓 𝑥 = 3 ∙ log 𝑥 
+𝑔: ℝ+ ∗ → ℝ ; 𝑔 𝑥 = log⁡(3 ∙ 𝑥) 
+Com relação aos gráficos dessas funções, podemos afirmar que: 
+","não se interceptam."," se interceptam num único ponto.","se interceptam em apenas dois pontos.","coincidem.","são simétricos em relação ao eixo das abscissas."," se interceptam num único ponto.");
+
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values (" Ana tem 2/3 da idade de Josefa e é 2 anos mais jovem que Rosa. Além disso, Josefa tem 4/3 da idade de Rosa. Dessa forma, concluímos que:","A diferença entre as idades de Josefa e Rosa é igual a 6."," A soma das idades das três é igual a 42. ","Ana é 3 anos mais jovem que Josefa.","Josefa é 3 anos mais velha que Rosa.","A soma das idades de Ana e Rosa é menor do que a idade de Josefa.","A diferença entre as idades de Josefa e Rosa é igual a 6.");
+
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Sabendo que as projeções dos catetos sobre a hipotenusa de um triângulo retângulo medem, respectivamente, 3𝑐𝑚 e 5𝑐𝑚, a área do triângulo, em 𝑐𝑚² , é de:",
+"6","9","4√15","5√8","7√12","4√15");
+insert into MatematicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Joaquina gostaria de comprar um carro novo, mas infelizmente não possui recursos financeiros suficientes para arcar com a compra do veículo à vista. Ela verificou uma das modalidades de crédito que permite a compra parcelada e planejada de um bem e fez uma simulação de um carro que custa R$50.000,00. Nesta simulação a parcela fixa mensalmente é 1,8% do valor do carro por um período de 65 meses. Dessa forma, quanto, em percentual, Joaquina pagaria a mais pelo veículo, segundo a simulação?",
+"14%","15%","17%","18%","27%","17%");
+
+select * from MatematicaPSC1;
+
+create table PortuguesPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(1000),
+    A varchar(200),
+    B varchar(200),
+    C varchar(200),
+    D varchar(200),
+    E varchar(200),
+    resposta char(200) not null
+    
+);
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia o seguinte trecho do livro Raízes do Brasil, de Sérgio Buarque de Holanda (Companhia das Letras, 2016, p. 97):
+“O insucesso da experiência holandesa no Brasil é, em verdade, mais uma justificativa para a opinião, hoje corrente entre alguns antropologistas, de que os europeus do Norte são incompatíveis com as regiões equatoriais”. 
+Nas palavras “insucesso”, “holandesa”, “corrente”, “incompatíveis” e “equatoriais”, constatamos qual sequência de letras e fonemas, respectivamente?
+","9 – 7; 9 – 7; 8 – 7; 13 – 12; 11 – 11","9 – 8; 9 – 7; 8 – 7; 13 – 11; 11 – 10
+","9 – 7; 9 – 8; 8 – 8; 13 – 12; 11 – 10","9 – 8; 9 – 8; 8 – 7; 13 – 12; 11 – 11","9 – 7; 9 – 7; 8 – 6; 13 – 11; 11 – 11","9 – 7; 9 – 7; 8 – 6; 13 – 11; 11 – 11");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia as afirmativas a seguir, feitas sobre variação linguística:
+
+A variação linguística é um fenômeno que amplia os conteúdos impostos pela gramática normativa, com o objetivo de torná-la acessível à população carente.
+A expressão “umborimbora, maninha”, muito usada pelos amazonenses, se caracteriza como uma variante que deve ser aceita sem preconceito, por registrar uma particularidade regional do idioma. 
+A variação linguística existe em face de as línguas serem dinâmicas e não ficarem estáticas no tempo, admitindo mudanças que a alteram. 
+Há diferença entre “gíria” e “jargão”, sendo a primeira usada por jovens e determinados grupos sociais, enquanto o segundo é empregado por profissionais (médicos e professores, por exemplo). 
+Um exemplo de mudança mediante a variação geográfica (ou diacrônica) se constata no uso de “Vossa Mercê”, que passou sucessivamente a “vosmecê”, “você” e “cê”.","Somente as afirmativas I, II e V são verdadeiras.","Somente as afirmativas I, III e IV são verdadeiras.
+","Somente as afirmativas I, IV e V são verdadeiras.","Somente as afirmativas II, III e IV são verdadeiras.","Somente as afirmativas II, III e V são verdadeiras.","Somente as afirmativas II, III e IV são verdadeiras.");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Em 1919, o poeta modernista Manuel Bandeira lançou o seu segundo livro, intitulado Carnaval. Nele consta o poema “Arlequinada”, do qual se reproduzem as estrofes a seguir: 
+Teus seios têm treze anos. 
+Dão os dois uma mancheia... 
+E essa inocência incendeia, 
+Faz cinza de desenganos... 
+
+O teu pequenino queixo 
+– Símbolo do teu capricho – 
+É dele que mais me queixo, 
+Que por ele assim me espicho! 
+
+Tua cabeleira rara 
+Também ela é de criança: 
+Dará uma escassa trança, 
+Onde eu mal me estrangulara! 
+
+Observa-se que, no último verso (“Onde eu mal me estrangulara!”), Bandeira usou “estrangular” num modo e num tempo não usuais, criando uma licença poética exigida pela rima (rara / estrangulara). Esse verbo, para ficar mais bem conjugado em relação ao restante do enunciado, deveria estar no:
+",
+"pretérito perfeito do indicativo.","futuro do subjuntivo.","pretérito imperfeito do indicativo.","futuro do pretérito do indicativo. ","pretérito imperfeito do subjuntivo.","futuro do pretérito do indicativo. ");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values (" Indique o grau do adjetivo, nas frases que seguem, usando este código: 
+CIF: Comparativo de inferioridade 
+CIG: Comparativo de igualdade 
+SRS: Superlativo relativo de superioridade 
+SAA: Superlativo absoluto analítico 
+SAS: Superlativo absoluto sintético 
+
+I. A enchente deste ano foi tão violenta quanto a do ano passado. 
+II. A floresta amazônica é a mais bela de todo o planeta. 
+III. Não se pode negar que a floresta amazônica é belíssima. 
+IV. A enchente deste ano foi bastante violenta. 
+V. O clima amazônico é menos quente que o saariano. 
+
+
+Assinale a alternativa que apresenta a sequência CORRETA de cima para baixo: 
+",
+"SRS – SAS – CIF – SAA – CIG","CIG – SRS – SAS – SAA – CIF","SRS – SAS – SAA – CIF – CIG","SRS – SAS – SAA – CIF – CIG","SAS – SRS – CIF – CIG – SAA","CIG – SRS – SAS – SAA – CIF");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Assinale a alternativa que apresenta um país que, não tendo sido colonizado por Portugal, não fala a língua portuguesa: 
+",
+"Angola","Cabo-verde","Guiné-Bissau ","Madagascar","São Tomé e Príncipe","Madagascar");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Classifique morfologicamente os vocábulos sublinhados, colocando entre parênteses a letra a eles correspondente, conforme o seguinte código: 
+
+A – artigo 
+P – pronome pessoal oblíquo 
+D – pronome demonstrativo 
+
+(   ) Qual prato você prefere para almoçar? O de sempre? 
+(   ) Eu estava com muita raiva, mas não o demonstrei. 
+(   ) Finalmente, chegaram as férias. 
+(   ) Estão dispensados todos os que terminaram a prova. 
+(   ) Perdi o celular e não o encontrei em parte alguma. 
+
+Assinale a alternativa que preenche CORRETAMENTE os parênteses, de cima para baixo: 
+",
+"D – D – A – D – P"," D – P – A – A – P "," D – P – P – A – A"," A – D – A – P – D ","A – D – P – D – D","D – D – A – D – P");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Nas orações a seguir, classifique o sujeito, colocando entre os parênteses o seguinte código: 
+S – sujeito simples 
+C – sujeito composto 
+I – sujeito indeterminado 
+X – oração sem sujeito 
+
+(   ) Removeram-se os obstáculos da estrada. 
+(   ) Espalharam o boato com extrema rapidez.
+(   ) Deve obedecer-se às leis do país. 
+(   ) Após a falta de luz, choveram reclamações sobre a companhia. 
+(   ) São onze horas da manhã. 
+(   ) Devem existir lacunas e contradições nessa lei. 
+
+Assinale a alternativa que preenche corretamente os parênteses, de cima para baixo: 
+",
+"I – S – C – X – X – C","S – C – I – X – I – X","S – I – I – S – X – C","C – I – I – C – S – X","C – S – C – S – X – C","S – I – I – S – X – C");
+
+insert into PortuguesPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia as frases a seguir: 
+Certas pessoas fingem ter mais posses do que realmente possuem. 
+No trabalho, apenas cinco funcionários cumpriram as tarefas determinadas; os demais não souberam fazê-las. 
+Infelizmente não tenho dinheiro bastante para ajudar a todos os meus familiares. Preste muita atenção e pense antes de responder para escolher as respostas certas. 
+Ouvi de um essa história, mas francamente não acredito nela. 
+
+Assinale a alternativa que corresponde às frases em que as palavras em destaque são pronomes indefinidos: 
+",
+"Somente as frases I, II e IV.","Somente as frases I, II e V.","Somente as frases I, III e IV.","Somente as frases II, III e V.","Somente as frases III, IV e V.","Somente as frases I, II e V.");
+
+drop table LiteraturaPSC1;
+
+create table LiteraturaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(3000),
+    A varchar(800),
+    B varchar(800),
+    C varchar(800),
+    D varchar(800),
+    E varchar(800),
+    resposta varchar(500) not null
+    
+);
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Sobre a importância da literatura na sociedade, leia o excerto a seguir: 
+O papel da literatura no mundo de hoje 
+Segundo o especialista Antônio Cândido, em seu texto Direitos humanos e literatura, a literatura é, ou deveria ser, um direito básico do ser humano, pois a ficção atua no caráter e na formação crítica do ser humano. 
+Ele destaca que a literatura deveria estar inserida entre os direitos básicos do ser humano, pois desde os primórdios da humanidade o ser humano tem a necessidade de se alimentar intelectualmente de algum tipo de ficção. Ele defende que nenhum ser humano é capaz de viver sem algum tipo de ficção, mesmo em uma parte de seu dia, todos os dias; aponta que a literatura é uma necessidade do ser humano, sendo assim, todos deveriam ter direito à literatura, assim como moradia, alimentação, saúde, segurança e os demais direitos que possuímos registrados na lei dos direitos humanos. 
+Segundo ele, a literatura se manifesta universalmente através do ser humano, e em todos os tempos, tem função e papel humanizador. A literatura tem suma importância na construção de uma sociedade. [...] 
+Relacione as estrofes a seguir (retiradas de leituras obrigatórias) com o excerto lido e identifique aquela que cumpre a função e papel humanizador atribuído à Literatura: 
+",
+"Eu, Marília, não sou algum vaqueiro, 
+Que viva de guardar alheio gado, 
+De tosco trato, de expressões grosseiro, 
+Dos frios gelos e dos sóis queimado. 
+(Tomás Antônio Gonzaga)
+","A vós, divinos olhos, eclipsados 
+De tanto sangue e lágrimas abertos, 
+Pois, para perdoar-me, estais despertos, 
+E, por não condenar-me, estais fechados. 
+(Gregório de Matos)
+","Devora-se a infeliz mísera Gente, 
+E sempre reduzida a menos terra, 
+Virá toda a extinguir-se infelizmente; 
+Sendo em campo menor maior a guerra. 
+Olhai, Senhor, com reflexão clemente 
+Para tantos Mortais, que a brenha encerra; 
+E que, livrando desse abismo fundo, 
+Vireis a ser Monarca de outro Mundo. 
+(Santa Rita Durão)
+","Olhos meus, disse então, por defender-me, 
+Se a beleza hei de ver para matar-me, 
+Antes, olhos cegueis, do que eu perder-me. 
+(Gregório de Matos)
+","Triste Bahia! oh! quão dessemelhante 
+Estás e estou do nosso antigo estado! 
+Pobre te vejo a ti, tu a mim empenhado, 
+Rica te vi eu já, tu a mim abundante 
+(Gregório de Matos)
+","Devora-se a infeliz mísera Gente, 
+E sempre reduzida a menos terra, 
+Virá toda a extinguir-se infelizmente; 
+Sendo em campo menor maior a guerra. 
+Olhai, Senhor, com reflexão clemente 
+Para tantos Mortais, que a brenha encerra; 
+E que, livrando desse abismo fundo, 
+Vireis a ser Monarca de outro Mundo. 
+(Santa Rita Durão)
+");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("As manifestações literárias ocorridas no Brasil durante o século XVI foram nomeadas de Quinhentismo. Essas manifestações introduziram a cultura europeia em terras brasileiras e corresponderam às origens da literatura no país, mas sem uma cosmovisão do homem nativo. Os seus maiores representantes estão entre os jesuítas que para cá vieram com o intuito de catequizar o índio. Um desses jesuítas foi o padre Manuel da Nóbrega sobre quem pode-se afirmar que:
+
+seu trabalho missionário tem cunho literário por refletir o momento religioso da Reforma Protestante.
+sua obra, Diálogo sobre a conversão do gentio, é incluída nas histórias literárias brasileiras e classificada como literatura de informação.
+o Diálogo sobre a conversão do gentio é um romance que fala do índio ocupando, no imaginário pós colonial, o lugar que lhe competia: o papel de rebelde.
+via na conversão e na natureza dos índios o reconhecimento de sua humanidade, pois tinham as faculdades que escolasticamente definem a pessoa humana, a inteligência, a memória e a vontade, embotadas e corrompidas pelas abominações de péssimos hábitos.
+
+Assinale a alternativa CORRETA:",
+"Somente as afirmativas I e II são verdadeiras.","Somente as afirmativas I e III são verdadeiras.","Somente as afirmativas II e III são verdadeiras.
+","Somente as afirmativas II e IV são verdadeiras.","Somente as afirmativas III e IV são verdadeiras.","Somente as afirmativas II e IV são verdadeiras.");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Carta IX (fragmento) 
+A desordem, amigo, não consiste em formar esquadrões, mas sim no excesso. Um reino bem regido não se forma somente de soldados; tem de tudo: tem milícia, lavoura, e tem comércio. Se quantos forem ricos se adornarem das golas e das bandas, não teremos um só depositário, nem os órfãos terão também tutores, quando nisto interessa, igualmente, o bem do Império. Carece a monarquia dez mil homens de tropa auxiliar? Não haja embora de menos um soldado, mas os outros vão à pátria servir nos mais empregos, pois os corpos civis são como os nossos, que, tendo um membro forte e os outros débeis, se devem, Doroteu, julgar enfermos. 
+
+Em resumo, sobre o fragmento é CORRETO afirmar que:
+",
+"Nesses versos livres, Critilo defende a necessidade do governador de Minas Gerais de aumentar o efetivo militar para melhorar a segurança da população e assim obter apoio incondicional para seus atos patrióticos.
+","Nesses versos decassílabos, Critilo narra para Doroteu as ações do governador de Minas Gerais que pretendia aumentar o efetivo militar, dando mais oportunidade de emprego aos cidadãos mineiros em tempos de tanta prevaricação e desmando da Coroa portuguesa.
+","Nesses versos dodecassílabos, Critilo explica a Doroteu que o governador de Minas Gerais pretende aumentar o efetivo militar para poder confrontar a Coroa portuguesa e assim dar início à Inconfidência Mineira.
+","Nesses versos hendecassílabos, Critilo relata a Doroteu os despotismos e prevaricações do governador de Minas Gerais e somente com o aumento do efetivo militar seria possível refrear os desmandos do governador.
+","Nesses versos decassílabos, Critilo mostra a Doroteu as razões pelas quais o governador de Minas Gerais quer aumentar o efetivo militar: ter no elemento armado apoio incondicional para seus despotismos e prevaricações enfraquecendo a sociedade civil.","Nesses versos decassílabos, Critilo mostra a Doroteu as razões pelas quais o governador de Minas Gerais quer aumentar o efetivo militar: ter no elemento armado apoio incondicional para seus despotismos e prevaricações enfraquecendo a sociedade civil.");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia as sínteses apresentadas a seguir, relacionados às referências indicadas entre parênteses:
+Poema de exaltação à figura de uma santa que se submete ao sacrifício num confronto entre o bem e o mal em nome da crença, revigorando a fé do povo. (A santa Inês – José de Anchieta) 
+Diálogo entre dois irmãos portugueses com visões diferentes a respeito da conversão dos índios, da colonização e da inserção dos jesuítas no processo. (Diálogo sobre a Conversão do Gentio – Pe. Antônio Vieira)
+Soneto em que a linguagem é usada pelo eu lírico para conseguir o perdão ao enfrentar o poder divino colocando em xeque a dualidade entre a “culpa” e o “perdão” (A Jesus Cristo Nosso Senhor – Gregório de Matos) 
+Poema que segue o discurso ético, utilizando a construção de um retrato moral do eu-lírico, elevando-o a um padrão ideal de noivo e companheiro. (Lira XXV – Cláudio Manuel da Costa) 
+
+Assinale a alternativa CORRETA:
+",
+"Somente em I e II as referências são verdadeiras.","Somente em I e III as referências são verdadeiras.","Somente em I e IV as referências são verdadeiras.
+","Somente em II e III as referências são verdadeiras.","Somente em III e IV as referências são verdadeiras.","Somente em I e III as referências são verdadeiras.");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia o texto: 
+
+À CIDADE DA BAHIA 
+
+Triste Bahia! Ó quão dessemelhante 
+Estás e estou do nosso antigo estado, 
+Pobre te vê a ti, tu a mi empenhado, 
+Rica te vi eu já, tu a mi abundante. 
+
+A ti trocou-te a máquina mercante, 
+que em tua larga barra tem entrado, 
+A mim foi-me trocando e tem trocado, 
+Tanto negócio e tanto negociante. 
+
+Deste em dar tanto açúcar excelente 
+Pelas drogas inúteis, que abelhuda 
+Simples aceitas do sagaz Brichote. 
+
+Oh! se quisera Deus que de repente 
+Um dia amanheceras tão sisuda 
+que fora de algodão o teu capote! 
+
+De acordo com o texto, assinale com V as alternativas verdadeiras e com F as falsas: 
+(   ) O poeta faz uma comparação entre a Bahia e os comerciantes de algodão. 
+(   ) O sujeito lírico sonha com o retorno à época em que a Bahia era rica e governada por pessoas sérias. 
+(   ) O poema é um lamento pelas perdas econômicas sofridas tanto pela cidade quanto pelo sujeito poético, ambos vítimas da exploração mercantilista. 
+(   ) O poema é composto por versos redondilhos e decassilábicos. 
+(   ) O tom de frustração e pessimismo é mantido em todo o poema. 
+Lida de cima para baixo, a sequência CORRETA é:
+",
+"V – F – F – V – V
+","V – F – V – V – F
+","V – F – V – F – V","F – V – V – F – F","F – V – F – V – F","F – V – V – F – F");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia a estrofe: 
+Os poemas líricos do Arcadismo apresentam-se tematizados a partir de expressões latinas. Leia a estrofe da Lira 58, de Tomás Antônio Gonzaga e responda:
+Irás a divertir-te na floresta, 
+sustentada Marília, no meu braço; 
+aqui descansarei a quente sesta, 
+dormindo um leve sono em teu regaço; 
+enquanto a luta jogam os pastores, 
+e emparelhados correm nas campinas, 
+toucarei teus cabelos de boninas, 
+nos troncos gravarei os teus louvores. 
+Graças, Marília Bela, 
+Graças a minha estrela! 
+
+Aponte a expressão CORRETAMENTE traduzida e definida identificada na estrofe da Lira 58, de Tomás Antônio Gonzaga: ",
+"Aurea mediocritas – mediocridade áurea, afirmação das qualidades da vida no campo.
+","Fugere urbem – fuga do dia; eliminar os excessos e aproximar-se da perfeição da natureza.
+","Inutilia Truncat – cortar o formal; trata da necessidade de aproveitar intensamente o presente.
+"," Carpe diem – cantar a cidade, a urbanização; simboliza a valorização das coisas cotidianas, simples.
+","Locus amoenus – lugar ameno, onde os amantes se encontram para desfrutar os prazeres da natureza. ","Locus amoenus – lugar ameno, onde os amantes se encontram para desfrutar os prazeres da natureza. ");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Leia o texto: 
+
+Mal Secreto 
+Se a cólera que espuma, a dor que mora 
+N'alma, e destrói cada ilusão que nasce 
+Tudo o que punge, tudo o que devora 
+O coração, no rosto se estampasse; 
+
+
+Se se pudesse, o espírito que chora, 
+Ver através da máscara da face, 
+Quanta gente, talvez, que inveja agora 
+Nos causa, então piedade nos causasse! 
+
+Quanta gente que ri, talvez, consigo 
+Guarda um atroz, recôndito inimigo 
+Como invisível chaga cancerosa! 
+
+Quanta gente que ri, talvez existe,
+ Cuja ventura única consiste
+ Em parecer aos outros venturosa!
+
+Considerando aspectos formais e de conteúdo do texto lido, analise as assertivas a seguir: 
+As duas primeiras quadras apresentam encadeamentos (ou enjambements). 
+O poema é uma elegia com versos dodecassilábicos em oitava rima. 
+O sujeito lírico, no último terceto, aborda o disfarce das pessoas quanto a suas verdadeiras emoções.
+O poema induz a uma reflexão filosófica acerca da importância que a aparência tem na sociedade.
+Todas as rimas do poema são ricas: pertencem a classes gramaticais diferentes.
+
+Assinale a alternativa correta: 
+",
+"Somente as assertivas I, II e III são verdadeiras.","Somente as assertivas I, II e V são verdadeiras.
+"," Somente as assertivas I, III e IV são verdadeiras.","Somente as assertivas II, IV e V são verdadeiras.","Somente as assertivas III, IV e V são verdadeiras."," Somente as assertivas I, III e IV são verdadeiras.");
+
+insert into LiteraturaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O termo barroco surge inspirado em uma pérola de formato irregular, designando tudo o que era extravagante, excêntrico e raro em oposição às manifestações renascentistas do século XVI. A produção literária barroca refletia os valores teocêntricos e as angústias da dualidade entre o material e o espiritual. No Brasil Colônia, durante o Barroco, duas grandes academias se destacaram: a dos Esquecidos e a dos Felizes. 
+
+Considerando os fragmentos de textos a seguir, aponte aquele que NÃO apresenta as características barrocas: ",
+"“[...] A vós, divinos olhos, eclipsados, De tanto sangue e lágrimas cobertos, Pois para perdoar-me estais despertos, E, por não condenar-me, estais fechados. [...]”
+","[...] Forças originais, essência, graça De carnes de mulher, delicadezas... Todo esse eflúvio que por ondas passa Do Éter nas róseas e áureas correntezas [...]"," “[...] O alegre do dia entristecido; O silêncio da noite perturbado; O resplendor do sol todo eclipsado; E o luzente da lua desmentido:[...]” 
+
+","“[...]Lembra-te Deus que és pó, para humilhar-te; E como teu baixel sempre fraqueja Nos mares da vaidade, onde peleja, te põe à vista a terra onde salvar-te.”
+","“[...] O mais antigo pregador que houve no Mundo foi o Céu. [...] Suposto que o Céu é pregador, deve ter sermões e deve ter palavras. E quais são estes sermões e estas palavras do Céu? – As palavras são as estrelas, os sermões são a composição, a ordem, a harmonia e o curso delas. [...] Não fez Deus o céu em xadrez de estrelas, como os pregadores fazem o sermão em xadrez de palavras. Se de uma parte está branco, de outra há de estar negro; se de uma parte está dia, de outra há de estar noite? [...] Mas dir-me-eis: Padre, os pregadores de hoje não pregam do Evangelho, não pregam das sagradas escrituras? Pois como não pregam a palavra de Deus? – Esse é o mal. Pregam palavras de Deus, mas não pregam a Palavra de Deus.”
+","[...] Forças originais, essência, graça De carnes de mulher, delicadezas... Todo esse eflúvio que por ondas passa Do Éter nas róseas e áureas correntezas [...]");
+
+create table HistoriaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(3000),
+    A varchar(800),
+    B varchar(800),
+    C varchar(800),
+    D varchar(800),
+    E varchar(800),
+    resposta varchar(500) not null
+    
+);
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O período da Idade Média, na Europa Cristã, em que o monopólio cultural e a valorização da religiosidade empreitada pela Igreja refletiu sobre as artes e mentalidade da época, ficou conhecido como:
+","antropocentrismo cultural.","geocentrismo.","renascimento cultural.","heliocentrismo.","teocentrismo cultural.","teocentrismo cultural.");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("“O fortalecimento gradual do poder dos reis entre os séculos XI e XVI é conhecido como processo de formação do Estado Moderno. Em cada país da Europa esse processo teve tempo e ritmos próprios.”
+Em Portugal e na Espanha, a formação dos Estados Nacionais esteve inserida no contexto de lutas entre cristãos e muçulmanos pelo controle dos territórios. Assim, o surgimento da monarquia nacional na península Ibérica esteve ligado ao processo da chamada: 
+","Guerra de Reconquista.","Guerra do Ópio.","Guerra das Duas Rosas.","Guerra dos Cem Anos.","Guerra do Paraguai.","Guerra de Reconquista.");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("A Alta Idade Média (século V ao X) se caracterizou pela formação e consolidação do feudalismo, essa estrutura econômica, social, política e cultural foi predominante na Europa ocidental.
+Sobre algumas das características gerais do sistema feudal, é CORRETO afirmar que o poder político era:
+","descentralizado e a sociedade estava dividida em três ordens: clero, nobreza e servos.",
+"descentralizado e a homenagem era um juramento de fidelidade que o servo deveria fazer ao seu senhor. 
+","centralizado e a Igreja Católica tinha muito poder nessa sociedade. ","centralizado e a economia era baseada na agricultura.
+","exclusivo do rei e não havia divisão social.","descentralizado e a sociedade estava dividida em três ordens: clero, nobreza e servos.");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere o seguinte texto relacionado ao método de trabalho do historiador: 
+“À semelhança do cientista no laboratório, o historiador faz perguntas, às quais consegue ou não responder a partir dos documentos que encontra. E muitas vezes, em função mesmo dos documentos que encontra, precisa refazer suas perguntas, o que incide sobre aquilo que descobre.”
+Em relação ao texto, vê-se que destaca o dinamismo do trabalho do historiador, que se distingue de outras formas de conhecimento do passado pela utilização:
+","de deduções e adivinhações.","do passado para prever o futuro.","de fontes históricas.","da literatura como expressão do real.
+","de técnicas agrícolas.","de fontes históricas.");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values (" Importantes civilizações dominaram a região Mesoamérica. Uma delas ficou conhecida pela sua imponente cidade, com seus imensos templos, mercados, jardins e uma estrutura política altamente centralizada, localizada na cidade de Tenochtitlán, atual Cidade do México. Quanto à civilização que dominou essa região, é CORRETO afirmar que ela foi denominada de: 
+","Império Inca","Império Maia","Império de Oió","Império Asteca","Império Otomano","Império Asteca");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("“Os reinos cristãos ibéricos, nascidos e consolidados durante a guerra contra o invasor islâmico, eram regiões da Europa cristã onde o ideal de cruzada estava mais enraizado no pensamento de seus combatentes. Durante a Reconquista da Hispânia, várias foram as campanhas militares desses reinos nas quais o espírito cruzadístico era manifestado.
+Sobre algumas das mais significativas consequências das Cruzadas, é CORRETO afirmar que:
+","a participação de cristãos e muçulmanos nas expedições cruzadistas promoveu a tolerância religiosa na Europa.
+","ocorreu o fortalecimento do poder e do prestígio dos senhores feudais, que passaram a lucrar economicamente com a conquista de territórios mais distantes.
+","o crescente poder da Igreja romana se expandiu para além do território europeu; isso se deu em decorrência da exclusiva participação dos membros da igreja nas expedições cruzadistas.
+","consolidou-se a ocupação total e definitiva do Egito após a sétima e oitava cruzadas (1250 e 1270), comandadas por Luís IX, rei da França.
+","a reconquista cristã da Península Ibérica e a abertura do mar mediterrâneo aos comerciantes europeus favoreceram, posteriormente, o renascimento cultural e urbano da Europa.
+","a reconquista cristã da Península Ibérica e a abertura do mar mediterrâneo aos comerciantes europeus favoreceram, posteriormente, o renascimento cultural e urbano da Europa.
+");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("“O Império Romano não podia crescer e consolidar-se sem olhar constantemente para além de suas fronteiras, isto é, o exterior lhe era fundamental, já que a incorporação de terras e a expansão demográfica constituíam os motores que conduziram Roma ao seu lugar de proeminência no mundo mediterrâneo.”
+Sobre alguns dos mecanismos que caracterizaram o processo de constituição do Império Romano, é CORRETO afirmar que: 
+","a Pax Roman buscou consolidar a harmonia do Império Romano com a implantação de uma máquina político-administrativa, tendo como uma das consequências o crescimento econômico e a expansão do comércio.",
+"no período da República romana, a assembleia curial dedicava-se aos assuntos ligados à política de expansão territorial, tendo um papel fundamental no sucesso do processo de romanização.
+","em 450 a.C. foi compilado o primeiro conjunto de leis romanas, a Lei das Doze Tábuas, que encerrou os conflitos na Península Itálica, garantindo a paz entre Roma e suas províncias.
+"," a emergência da República romana reduziu os conflitos entre patrícios e plebeus, garantindo a manutenção da paz no vasto território romano. 
+","no governo de Otávio Augusto, a descentralização do poder do imperador favoreceu o desenvolvimento cultural e a ampliação do comércio entre as províncias mais distantes.","a Pax Roman buscou consolidar a harmonia do Império Romano com a implantação de uma máquina político-administrativa, tendo como uma das consequências o crescimento econômico e a expansão do comércio.");
+
+insert into HistoriaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Na região do vale do Nilo, floresceu a civilização egípcia faraônica, que durou quase três mil anos. O desenvolvimento do Egito antigo ocorreu impulsionado por diversos fatores, em meio a uma região predominantemente desértica, localizado no nordeste da África. 
+Com relação a um dos fatores que contribuíram para esse desenvolvimento do Egito faraônico, é CORRETO afirmar que:
+","o desenvolvimento das atividades ligadas aos trabalhos especializados, por exemplo, a produção de cerveja e joias, tornou-se a base da economia do Egito faraônico.
+","os egípcios construíram um complexo sistema de encanamento das águas do Nilo, que favoreceu as práticas agrícolas.",
+"o desenvolvimento da civilização antiga egípcia deveu-se apenas ao intenso comércio com o mundo asiático.
+","a base econômica da civilização antiga egípcia estruturava-se, exclusivamente, em torno das atividades produtivas dos artesãos.
+","a utilização de mão de obra exclusivamente escrava nas atividades agrícolas favoreceu o florescimento dessa civilização.","os egípcios construíram um complexo sistema de encanamento das águas do Nilo, que favoreceu as práticas agrícolas.");
+
+create table GeografiaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(3000),
+    A varchar(800),
+    B varchar(800),
+    C varchar(800),
+    D varchar(800),
+    E varchar(800),
+    resposta varchar(500) not null
+    
+);
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("A Bacia Hidrográfica do __________ corresponde a 10,8% do território brasileiro, abrangendo seis estados: Goiás, Tocantins, Pará, Maranhão, Mato Grosso e Distrito Federal. Nesta Bacia, estão presentes os biomas do(a) ____________ ao norte e noroeste, e do(a) __________ nas demais áreas. 
+
+Assinale a sequência que completa, CORRETAMENTE, as lacunas:",
+"Tocantins-Araguaia; Amazônia; Cerrado",
+"Paraguai; Pantanal mato-grossense; Mata Atlântica","Parnaíba; Amazônia; Caatinga",
+"Tocantins-Araguaia; Pantanal mato-grossense; Cerrado","Paraguai; Cerrado; Amazônia","Tocantins-Araguaia; Amazônia; Cerrado");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Compõem o bioma Amazônia planícies, depressões e planaltos. No Planalto Residual Norte-Amazônico, localiza-se a parte mais elevada do Brasil com a denominação de:
+","Monte dos Sinos","Planalto Peruano","Pico da Neblina","Serra do Sol","Pico Urubamba","Pico da Neblina");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values (" Leia com atenção o texto a seguir: 
+No início, era um projeto militar dos EUA chamado de ―NAVSTAR‖; que foi criado na década de 1960, mas só foi considerado completo em 1995, depois de 35 anos de trabalho que custaram 10 bilhões de dólares aos cofres americanos. 
+
+Com base no texto e nos conhecimentos sobre o tema, assinale a alternativa que apresenta CORRETAMENTE a tecnologia descrita no conteúdo:
+","Geoprocessamento","Projeção Cartográfica","Sensoriamento Remoto
+","Sistema de Posicionamento Global","Sistema de Informações Geográficas","Sistema de Posicionamento Global");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Sobre o mapa temático, é CORRETO afirmar que:
+","é um mapa que representa um tema específico ou área de assunto, como variação de temperatura, distribuição de precipitação e densidade populacional.",
+"é um mapa que destaca as áreas situadas na região equatorial e preserva as dimensões relativas entre os continentes e países.
+","é uma representação gráfica que corresponde à redução da realidade que está sendo tematizada no mapa.
+","resulta de um conjunto de operações que permite representar no plano, por meio de paralelos e meridianos, os fenômenos da superfície de uma esfera.
+","seja qual for a porção representada, o mapa conserva a mesma relação com a área.","é um mapa que representa um tema específico ou área de assunto, como variação de temperatura, distribuição de precipitação e densidade populacional.");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Qual dos grupos a seguir deliberou pelo repasse financeiro para ajudar no combate às queimadas na Amazônia, em 2019? 
+","NAFTA ","BRICS","APEC","APEC","G7","G7");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O solo dessa região brasileira foi muito modificado e 
+prejudicado por fatores como: poluição, crescimento 
+desordenado, exploração agrícola e mineral, 
+diminuição dos rios e grande devastação da área por 
+elevado desmatamento, tornando-se um solo pobre e 
+ácido. Este tipo de solo pertence à Região:","Norte","Nordeste","Centro-Oeste","Sudeste","Sul","Sudeste");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("A radiação solar é, provavelmente, o elemento mais 
+importante do clima. Nesse sentido, a inclinação do 
+equador terrestre, em relação ao plano que contém 
+o equador do Sol, resulta:","na quantidade de vapor de água encontrada na 
+atmosfera","na dissolução da camada de ozônio da 
+atmosfera, contribuindo para o aumento da 
+temperatura terrestre","em diferentes quantidades de energia na 
+superfície terrestre e, consequentemente, nas 
+diferentes estações do ano","na elevação exagerada dos níveis de acidez da 
+atmosfera, em consequência do uso de 
+combustíveis fósseis nos transportes","em precipitações abundantes na zona equatorial 
+e nas zonas litorâneas ocidentais úmidas 
+tropicais","em diferentes quantidades de energia na 
+superfície terrestre e, consequentemente, nas 
+diferentes estações do ano");
+
+insert into GeografiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O “Polo de Produção Mineral” do estado do 
+Amazonas representa a implementação de uma nova 
+matriz econômica. Assinale a alternativa que 
+correlaciona CORRETAMENTE o município e sua 
+potencialidade mineral:","Urucará – Gás Natural","Rio Preto da Eva – Gesso","Manacapuru – Potássio","Apuí – Calcário","Benjamin Constant - Ferro","Apuí – Calcário");
+
+select * from GeografiaPSC1;
+
+create table BiologiaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(3000),
+    A varchar(800),
+    B varchar(800),
+    C varchar(800),
+    D varchar(800),
+    E varchar(800),
+    resposta varchar(500) not null
+    
+);
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("São exemplos de tecido conjuntivo especiais (especializados), EXCETO o tecido:
+","conjuntivo propriamente dito.","ósseo.","cartilaginoso.","sanguíneo.","adiposo.","conjuntivo propriamente dito.");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere as seguintes afirmativas sobre a organização estrutural e funções dos componentes celulares: 
+Além das proteínas fibrosas como o colágeno, as biomembranas são constituídas principalmente por três classes de lipídeos: glicogênio, quitina e celulose. 
+Os canais iônicos constituem um tipo especial de sistema de transporte ativo. 
+As microvilosidades são especializações que diminuem a área de superfície da membrana plasmática. 
+Os ribossomos são organelas membranosas associadas à digestão intracelular. 
+Assinale a alternativa CORRETA: 
+","Somente as afirmativas I e II são verdadeiras.","Somente as afirmativas I e III são verdadeiras.
+","Somente as afirmativas II e III são verdadeiras.","Somente as afirmativas III e IV são verdadeiras.
+","Todas as afirmativas são falsas.","Todas as afirmativas são falsas.");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Sobre as bases da biologia molecular, assinale a alternativa CORRETA: 
+","A quitina, o principal componente da parede celular dos fungos e do exoesqueleto dos artrópodes, é uma proteína de cadeia longa e insolúvel em água.
+","As proteínas são macromoléculas formadas pela união de unidades de glicose que se apresentam em dois níveis estruturais: primário e secundário.
+","O colecalciferol, tocoferol, ácido ascórbico e cianocobalamina são exemplos de vitaminas lipossolúveis.
+","O ácido desoxirribonucleico (DNA) apresenta diferentes conformações (tipos), porém as mais comuns são denominadas como A-DNA, B-DNA e Z-DNA.",
+"O código genético é a organização responsável pela ordem dos aminoácidos que formam o DNA e a sequência dos aminoácidos que compõe o RNA.","O ácido desoxirribonucleico (DNA) apresenta diferentes conformações (tipos), porém as mais comuns são denominadas como A-DNA, B-DNA e Z-DNA.");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Sobre as divisões da Biologia, analise os conceitos a seguir: 
+Estuda os aspectos ultraestruturais e funcionais das células e seus componentes. 
+Estuda a estrutura microscópica, composição, organização e função dos tecidos vivos. 
+Estuda os processos e mecanismos físicos e químicos que ocorrem nas células, tecidos, órgãos e sistemas nos organismos vivos. 
+Estuda as relações entre os seres vivos, bem como procura entender como os seres vivos relacionam-se com o ambiente em que vivem. 
+Assinale a alternativa que relaciona CORRETAMENTE os conceitos citados anteriormente:"," I: Fisiologia; II: Geologia; III: Ecologia; IV: Fisiologia
+","I: Genética; II: Ecologia; III: Fisiologia; IV: Citologia","I: Ecologia; II: Genética; III: Ecologia; IV: Fisiologia
+","I: Fisiologia; II: Genética; III: Citologia; IV: Ecologia
+"," I: Citologia; II: Histologia; III: Fisiologia; IV: Ecologia"," I: Citologia; II: Histologia; III: Fisiologia; IV: Ecologia");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("A que se refere o termo mielopoiese?","Somente à formação de linfócitos
+","Somente à formação de granulócitos","Somente à formação de macrófagos.","Somente à formação de células polimorfonucleares.
+","À formação de eritrócitos, plaquetas e granulócitos.","À formação de eritrócitos, plaquetas e granulócitos.");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Bactérias Gram-positivas e negativas podem ser diferenciadas na microscopia através da técnica idealizada por Hans Christian Joachim Gram (1884). Que característica estrutural difere essas bactérias quanto a sua coloração por esta técnica e qual o resultado observável após a aplicação da mesma?
+","Bactérias gram-positivas apresentam uma parede espessa de peptidoglicano que retém o corante aplicado, resultando em uma coloração roxa.",
+"Bactérias gram-negativas apresentam uma parede espessa de peptidoglicano que retém o corante aplicado, resultando em uma coloração roxa.
+","Bactérias gram-positivas apresentam uma parede delgada de peptidoglicano, mas com alta afinidade pelo corante aplicado, resultando em uma coloração vermelha.
+"," Bactérias gram-positivas apresentam uma parede espessa de peptidoglicano que retém o corante aplicado, resultando em uma coloração vermelha.
+","As bactérias podem ser individualizadas porque apresentam diferentes níveis de coloração de seu material genético.","Bactérias gram-positivas apresentam uma parede espessa de peptidoglicano que retém o corante aplicado, resultando em uma coloração roxa.");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O que há de especial na membrana externa das mitocôndrias que permite a passagem de pequenas moléculas?
+","Porinas","ATPase Na+ /K+","Canais de Ca++ dependentes de voltagem","Excesso de colesterol","Complexos do poro","Porinas");
+
+insert into BiologiaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O ramo da Biologia que estuda as águas interiores é denominado de:
+","Biologia pesqueira ","Biologia marinha","Protobiologia ","Limnologia","Alometria","Limnologia");
+
+create table QuimicaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(3000),
+    A varchar(800),
+    B varchar(800),
+    C varchar(800),
+    D varchar(800),
+    E varchar(800),
+    resposta varchar(500) not null
+    
+);
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Assinale a alternativa que apresenta a descrição CORRETA da representação de Lewis (ligações químicas) para o cianeto de hidrogênio:
+","Uma ligação simples entre C e H, uma ligação dupla entre C e N, um par de elétrons isolado no átomo C e um par de elétrons isolado no átomo N.
+","Uma ligação simples entre C e H, uma ligação simples entre C e N, dois pares de elétrons isolados no átomo C e três pares de elétrons isolados no átomo N.
+","Uma ligação tripla entre C e N, uma ligação simples entre C e H e um par de elétrons isolados no átomo N. ",
+"Duas ligações duplas e dois pares de elétrons isolados no átomo N. ","Uma ligação tripla entre C e N, uma ligação simples entre N e H e dois pares de elétrons isolados no átomo C.
+","Uma ligação tripla entre C e N, uma ligação simples entre C e H e um par de elétrons isolados no átomo N. ");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values (" Considere as seguintes afirmativas sobre o modelo do átomo de Bohr: 
+Um elétron pode permanecer em uma órbita particular, desde que absorva continuamente a radiação de uma frequência definida. 
+As órbitas de menor energia são aquelas mais próximas do núcleo. 
+Um elétron pode saltar da camada K (n = 1, nível de energia principal) para a camada M (n = 3, nível de energia principal), emitindo radiação de uma frequência definida. 
+Assinale a alternativa CORRETA:
+","Somente a afirmativa I é verdadeira.",
+"Somente a afirmativa II é verdadeira.","Somente a afirmativa III é verdadeira. ","Somente as afirmativas I e II são verdadeiras.","Somente as afirmativas I e II são verdadeiras.
+","Somente a afirmativa II é verdadeira.");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere a reação que ocorre entre o zinco metálico e ácido nítrico: 
+
+Zn + HNO3 → Zn(NO3)2 + N2O + H2O 
+
+Quando se acertam os coeficientes estequiométricos, usando o menor conjunto adequado de coeficientes inteiros, o valor da soma de todos os coeficientes nesta reação de oxirredução é igual a: 
+","10","13","20","23","24","24");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values (" A calcantita, popularmente conhecida também por vitríolo-azul e caparrosa-azul, é um mineral pouco comum que cristaliza no sistema triclínico e pertence à classe dos sais inorgânicos hidratados (contém moléculas de água na sua estrutura). É produzido sinteticamente e muito usado como fungicida. Assinale a alternativa que representa o sal (na forma anidro): 
+","Carbonato de sódio","Nitrato de cálcio","Cloreto de cálcio","Sulfato de cobre","Cromato de potássio","Sulfato de cobre");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("“O manganês é um dos dez elementos mais abundantes na crosta terrestre, com concentrações geralmente superiores a 0,1% em peso na crosta continental média. Em ambientes naturais, a atividade hidrotérmica, intemperismo continental e precipitação química em soluções alcalinas são os principais processos responsáveis pela mobilidade do manganês. Similarmente aos óxidos / hidróxidos de Mn, os silicatos de Mn, como a braunita (fórmula geral 3Mn2O3 .MnSiO3), são minerais muito comuns em diferentes ambientes geológicos porque sua formação ocorre por vários processos geológicos”. 
+Determine a porcentagem de manganês na braunita e seus estados de oxidação na ordem de apresentação na fórmula química (Mn = 54,94; O = 15,99; Si = 28,08):
+","9,1 %; +3; +3","16,0 %; +2; +3 ","28,0 %; +3; +2","54,94 %; +2; +3","63,6 %; +3; +2","63,6 %; +3; +2");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O ponto de ebulição do cloro é de – 35 ℃, enquanto do HCl é de −84,9 ℃. Já para o bromo, seu ponto de ebulição é de 58,8 ℃, enquanto para o HBr é de – 67 ℃. A partir dessas informações, é CORRETO afirmar que:
+","apesar das interações dipolo-dipolo no HCl serem mais intensas que no HBr, o bromo apresenta um maior raio atômico, tornando-o mais polarizável e produzindo uma força de London mais intensa no HBr.
+","existem ligações de hidrogênio entre as moléculas de HBr, além das forças de dispersão de London
+","existem forças dipolo-dipolo entre as moléculas de HCl, além das forças de dispersão de London.
+","a resultante das forças de interação intermoleculares no ácido clorídrico é mais intensa que no ácido bromídrico","a molécula de ácido clorídrico (HCl) apresenta um momento de dipolo elétrico menor que o ácido bromídrico (HBr), devido à maior eletronegatividade do cloro.","apesar das interações dipolo-dipolo no HCl serem mais intensas que no HBr, o bromo apresenta um maior raio atômico, tornando-o mais polarizável e produzindo uma força de London mais intensa no HBr.
+");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considerando as moléculas SCl2, SO3 e SOCl2, assinale a alternativa que indica as geometrias dessas moléculas, na ordem dada:
+","Linear, trigonal plana, trigonal piramidal","Linear, trigonal piramidal, trigonal plana ","Angular, trigonal plana, linear
+"," Angular, trigonal plana, trigonal piramidal","Angular, trigonal piramidal, trigonal plana"," Angular, trigonal plana, trigonal piramidal");
+
+insert into QuimicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Isótonos são:
+","dois elementos no mesmo grupo da tabela 
+periódica","dois elementos no mesmo período da tabela 
+periódica.","duas moléculas com a mesma fórmula, mas 
+diferentes arranjos de átomos","duas moléculas com o mesmo número de 
+átomos","dois átomos com o mesmo número de nêutrons, 
+mas diferentes números de prótons","dois átomos com o mesmo número de nêutrons, 
+mas diferentes números de prótons");
+
+create table FisicaPSC1(
+
+	id int auto_increment primary key,
+	pergunta varchar(3000),
+    A varchar(800),
+    B varchar(800),
+    C varchar(800),
+    D varchar(800),
+    E varchar(800),
+    resposta varchar(500) not null
+    
+);
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Os gafanhotos possuem o terceiro par de pernas bem desenvolvido, musculoso e com fêmures mais robustos que os demais, permitindo que realizem grandes saltos. Considere a situação na qual um gafanhoto adulto alcança 90𝑐𝑚 de altura num salto, com o vetor velocidade inicial do gafanhoto formando um ângulo de 45° com a direção horizontal. Desprezando o arrasto do gafanhoto com o ar, bem como a força de sustentação aerodinâmica durante o salto, podemos afirmar que o módulo do vetor velocidade do gafanhoto, no instante em que saltou, era de aproximadamente:
+"," 6 𝑘𝑚⁄ℎ ","12 𝑘𝑚⁄ℎ ","15 𝑘𝑚⁄ℎ","22 𝑘𝑚⁄ℎ","24 𝑘𝑚⁄ℎ","22 𝑘𝑚⁄ℎ");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere a situação na qual uma pequena esfera de chumbo é deixada cair, a partir do repouso, de um trapiche 5,0𝑚 acima da água de um lago. Desprezando quaisquer efeitos de resistência do ar sobre a esfera durante sua queda e, considerando que ela afunda no lago com velocidade constante e igual àquela com a qual colidiu com a água e, finalmente, que a pequena esfera chega ao fundo do lago 3,0𝑠 após ter sido solta, podemos afirmar que a profundidade do lago no trecho em que ela caiu é de:
+","10𝑚","15𝑚","20𝑚","25𝑚","30𝑚","20𝑚");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Um perito foi chamado para investigar um acidente numa construção no qual um cabo de aço se rompeu enquanto o guindaste estava erguendo uma carga de 4.500𝑘𝑔. Ele iniciou a investigação verificando que o guindaste foi projetado para não exceder a velocidade de 3,0𝑚/𝑠 ou a aceleração de 1,0𝑚 𝑠 2 ⁄ enquanto ergue cargas. Verificou, também, que o fabricante do cabo de aço indica que ele pode ser submetido a uma tensão máxima de 50.000𝑁. A partir dessas informações, considere as seguintes afirmativas que o perito poderá, CORRETAMENTE, colocar em seu relatório:
+O cabo de aço estava defeituoso, pois ao iniciar o procedimento de erguer a carga de 4.500𝑘𝑔 com aceleração de 1,0𝑚 𝑠 2 ⁄ , a tensão no cabo de aço estava 500𝑁 abaixo do valor máximo indicado pelo fabricante. 
+O operador do guindaste excedeu a tensão máxima indicada pelo fabricante do cabo de aço ao iniciar o procedimento de erguer a carga de 4.500𝑘𝑔 com aceleração de 1,0𝑚 𝑠 2 ⁄ . 
+No momento em que a velocidade da carga que estava sendo erguida atingiu o valor constante de 3,0𝑚⁄𝑠, a tensão no cabo de aço ultrapassou o valor máximo de 50.000𝑁. 
+Assinale a alternativa CORRETA: ","Somente a afirmativa I é verdadeira.",
+"Somente a afirmativa II é verdadeira.","Somente a afirmativa III é verdadeira.
+","Somente as afirmativas I e II são verdadeiras.","Somente as afirmativas I e III são verdadeiras.","Somente a afirmativa I é verdadeira.");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere a situação na qual um marinheiro está trabalhando no alto do mastro de um barco e que, em dado momento, ele deixa cair um molho de chaves próximo ao mastro. Desprezando quaisquer efeitos da resistência do ar durante a queda do molho de chaves, podemos afirmar que: 
+se o barco estiver movendo-se em linha reta com velocidade constante, uma pessoa em repouso fora do barco irá ver o molho de chaves cair em um ponto afastado da base do mastro, na direção da popa. 
+se o barco estiver movendo-se em linha reta com velocidade constante, tanto para uma pessoa em repouso fora do barco, quanto para um marinheiro que esteja próximo ao local de queda no convés do barco, o molho de chaves irá cair exatamente ao pé do mastro. 
+para uma pessoa em repouso fora do barco, a trajetória de queda do molho de chaves é retilínea, independentemente de o barco estar em repouso ou movendo-se em linha reta com velocidade constante. 
+Assinale a alternativa CORRETA:
+"," Somente a afirmativa I é verdadeira. ","Somente a afirmativa II é verdadeira.",
+"Somente as afirmativas I e II são verdadeiras.","Somente as afirmativas I e III são verdadeiras.","Somente as afirmativas II e III são verdadeiras. ","Somente a afirmativa II é verdadeira.");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Num experimento realizado no Laboratório de Física, uma esfera de madeira foi amarrada em um barbante preso no fundo de um recipiente, inicialmente vazio. Ao colocar água no recipiente, verificou-se que a tensão no barbante correspondia a um terço do peso da esfera quando esta ficou completamente imersa em água. A partir dessas informações, os alunos determinaram a densidade da madeira, encontrando o valor de:
+","0,25𝑔 𝑐𝑚³ "," 0,33𝑔 𝑐𝑚³ ","0,50𝑔 𝑐𝑚³","0,67𝑔 𝑐𝑚³","0,75𝑔 𝑐𝑚³","0,75𝑔 𝑐𝑚³");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Na noite do dia 08.04.2019, a cidade do Rio de Janeiro passou por evento meteorológico extremo. Em apenas quatro horas, a cidade recebeu uma precipitação que variou entre 100𝑚𝑚 e 200𝑚𝑚 em vários bairros, superando a média local para todo o mês de abril. O temporal inundou ruas, derrubou árvores, destruiu ruas, carros e casas, além de provocar mortes, deixando a cidade em estado de crise. A área urbana da cidade do Rio de Janeiro é de 1200𝑘𝑚2 , e a precipitação média acumulada em apenas quatro horas nesta noite foi de 150𝑚𝑚. Sabendo que cada milímetro de precipitação acumulada corresponde ao volume de um litro para cada metro quadrado de superfície, podemos afirmar que a ordem de grandeza, em litros, do volume de chuva acumulado em apenas quatro horas, na noite do dia 08.04.2019, na cidade do Rio de Janeiro, foi de:
+","10¹¹","10¹⁰","10⁹","10⁸","10⁶","10¹¹");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("O despachante de bagagem de um aeroporto deixa cair uma mala com 23𝑘𝑔 sobre a esteira rolante que está passando abaixo a 2,0𝑚/𝑠. Os valores dos coeficientes de atrito estático e cinético, entre a mala e a esteira, valem, respectivamente, 𝜇𝑒 = 0,50 e 𝜇𝑐 = 0,25. A partir dessas informações, podemos afirmar que a distância que a mala irá escorregar sobre a superfície da esteira, até passar a deslocar-se junto dela, sem escorregar, será de:
+","80𝑐𝑚","60𝑐𝑚","50𝑐𝑚","40𝑐𝑚","30𝑐𝑚","80𝑐𝑚");
+
+insert into FisicaPSC1 (pergunta,A,B,C,D,E,resposta) values ("Considere a situação na qual um vaso de plantas mal 
+colocado na sacada da varanda de um apartamento 
+cai, atingindo o solo após 3,5�. Desprezando o 
+arrasto do ar sobre o vaso, podemos afirmar que a 
+velocidade com que o vaso atingiu o solo e a altura 
+da qual ele caiu valem, respectivamente:
+","33m⁄s e 61,25m","35m⁄s e 61,25m","35m⁄s e 70m","126km/h e 61,25m","126km⁄ℎ e 70m","126km⁄ℎ e 70m");
+
+create table usuario(
+
+	id int auto_increment primary key,
+    usuario varchar(50),
+    senha varchar (30)
+
+);
+drop table progresso;
+create table progresso(
+
+	id int auto_increment primary key,
+    pk_usuario int,
+    pontuacaoMat int,
+    pontuacaoPort int,
+    pontuacaoLit int,
+    pontuacaoBio int,
+    pontuacaoHis int,
+    pontuacaoGeo int,
+    pontuacaoFis int,
+    pontuacaoQui int,
+    foreign key (pk_usuario) references usuario(id)
+
+);
+use testequestoes;
+insert into usuario (usuario,senha) values ('loiraa','root');
+select * from usuario;
+select * from progresso;
