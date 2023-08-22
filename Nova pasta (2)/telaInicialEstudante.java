@@ -591,12 +591,9 @@ public class telaInicialEstudante extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_redacaoMenu2ActionPerformed
 
-    private void xMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_xMenu1MouseClicked
-       closeMenuBar1();
-    }//GEN-LAST:event_xMenu1MouseClicked
-
+  
     private void UsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UsuarioMouseClicked
-        openMenuBar1();
+        
     }//GEN-LAST:event_UsuarioMouseClicked
 
     /**
@@ -633,10 +630,9 @@ public class telaInicialEstudante extends javax.swing.JFrame {
             }
         });
     }
-     int w=415;
+    int w=415;
     int h=570;
-     int x=720;
-    int y=650;
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ChecklistaBarra;
@@ -712,26 +708,5 @@ public class telaInicialEstudante extends javax.swing.JFrame {
         }).start();
 }
       
-        private void openMenuBar1(){
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for(int i=0;i<x;i++){
-                    PANELUSUARIO.setSize(x, y);
-                    
-                }
-            }
-        }).start();
-}
-       private void closeMenuBar1(){
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for(int i=y;i>0;i--){
-                    PANELUSUARIO.setSize(i, y);
-                    
-                }
-            }
-        }).start();
-}
+    
 }
