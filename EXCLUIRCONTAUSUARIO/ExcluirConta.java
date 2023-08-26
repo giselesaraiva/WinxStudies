@@ -29,8 +29,8 @@ public class ExcluirConta extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        NAOO = new javax.swing.JButton();
+        SIMM = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -43,12 +43,22 @@ public class ExcluirConta extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(241, 252, 254));
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\NAO (1).png")); // NOI18N
-        jButton1.setContentAreaFilled(false);
-        jButton1.setLabel("");
+        NAOO.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\NAO (1).png")); // NOI18N
+        NAOO.setContentAreaFilled(false);
+        NAOO.setLabel("");
+        NAOO.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NAOOMouseClicked(evt);
+            }
+        });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\SIM.png")); // NOI18N
-        jButton2.setContentAreaFilled(false);
+        SIMM.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\SIM.png")); // NOI18N
+        SIMM.setContentAreaFilled(false);
+        SIMM.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SIMMMouseClicked(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Tem certeza que deseja excluir a conta_.png")); // NOI18N
 
@@ -64,9 +74,9 @@ public class ExcluirConta extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(SIMM)
                                 .addGap(34, 34, 34)
-                                .addComponent(jButton1)
+                                .addComponent(NAOO)
                                 .addGap(33, 33, 33))
                             .addComponent(jLabel1))
                         .addGap(58, 58, 58))
@@ -83,8 +93,8 @@ public class ExcluirConta extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(28, 28, 28)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(NAOO)
+                    .addComponent(SIMM))
                 .addGap(12, 12, 12))
         );
 
@@ -118,6 +128,14 @@ public class ExcluirConta extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void SIMMMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SIMMMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SIMMMouseClicked
+
+    private void NAOOMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NAOOMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NAOOMouseClicked
 
     /**
      * @param args the command line arguments
@@ -155,8 +173,8 @@ public class ExcluirConta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton NAOO;
+    private javax.swing.JButton SIMM;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
