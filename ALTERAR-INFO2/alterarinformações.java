@@ -17,7 +17,7 @@ public class alterarinformações extends javax.swing.JFrame {
         initComponents();
          setExtendedState(MAXIMIZED_BOTH);
          this.verSenha.setVisible(false);
-         this.verSenhaNova.setVisible(false);
+         this.verNovaSenha.setVisible(false);
     }
 
     /**
@@ -32,9 +32,9 @@ public class alterarinformações extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        NomeUsuario = new javax.swing.JTextField();
-        dataNasc = new javax.swing.JFormattedTextField();
+        Sobrenome = new javax.swing.JTextField();
         boxGrau = new javax.swing.JComboBox<>();
+        dataNasc = new javax.swing.JFormattedTextField();
         jLabel6 = new javax.swing.JLabel();
         Nome = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -46,13 +46,18 @@ public class alterarinformações extends javax.swing.JFrame {
         editarNasc = new javax.swing.JButton();
         editarNomeUsuario = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        verSenha = new javax.swing.JButton();
-        naoVerSenha = new javax.swing.JButton();
         pwdNovaSenha = new javax.swing.JPasswordField();
-        verSenhaNova = new javax.swing.JButton();
-        naoVerSenhaNova = new javax.swing.JButton();
         pwdsenhaAtual = new javax.swing.JPasswordField();
         jLabel8 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        NomeUsuario = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        pwdNovaSenha1 = new javax.swing.JPasswordField();
+        editarSobrenome = new javax.swing.JButton();
+        verSenha = new javax.swing.JButton();
+        naoVerSenha = new javax.swing.JButton();
+        verNovaSenha = new javax.swing.JButton();
+        naoVerNovaSenha = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,28 +67,15 @@ public class alterarinformações extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Grau de escolaridade.png")); // NOI18N
 
-        NomeUsuario.setBackground(new java.awt.Color(220, 239, 235));
-        NomeUsuario.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
-        NomeUsuario.setForeground(new java.awt.Color(51, 78, 73));
-        NomeUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3))); // NOI18N
-        NomeUsuario.setCaretColor(new java.awt.Color(0, 102, 102));
-        NomeUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        NomeUsuario.setDisabledTextColor(new java.awt.Color(51, 78, 73));
-        NomeUsuario.setEnabled(false);
-        NomeUsuario.setFocusable(false);
-
-        dataNasc.setBackground(new java.awt.Color(220, 239, 235));
-        dataNasc.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3), new java.awt.Color(51, 78, 73))); // NOI18N
-        dataNasc.setForeground(new java.awt.Color(51, 78, 73));
-        try {
-            dataNasc.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        dataNasc.setDisabledTextColor(new java.awt.Color(51, 78, 73));
-        dataNasc.setEnabled(false);
-        dataNasc.setFocusable(false);
-        dataNasc.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
+        Sobrenome.setBackground(new java.awt.Color(220, 239, 235));
+        Sobrenome.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
+        Sobrenome.setForeground(new java.awt.Color(51, 78, 73));
+        Sobrenome.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3))); // NOI18N
+        Sobrenome.setCaretColor(new java.awt.Color(0, 102, 102));
+        Sobrenome.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        Sobrenome.setDisabledTextColor(new java.awt.Color(51, 78, 73));
+        Sobrenome.setEnabled(false);
+        Sobrenome.setFocusable(false);
 
         boxGrau.setBackground(new java.awt.Color(87, 144, 132));
         boxGrau.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
@@ -97,6 +89,19 @@ public class alterarinformações extends javax.swing.JFrame {
         boxGrau.setName(""); // NOI18N
         boxGrau.setRequestFocusEnabled(false);
         boxGrau.setVerifyInputWhenFocusTarget(false);
+
+        dataNasc.setBackground(new java.awt.Color(220, 239, 235));
+        dataNasc.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3), new java.awt.Color(51, 78, 73))); // NOI18N
+        dataNasc.setForeground(new java.awt.Color(51, 78, 73));
+        try {
+            dataNasc.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        dataNasc.setDisabledTextColor(new java.awt.Color(51, 78, 73));
+        dataNasc.setEnabled(false);
+        dataNasc.setFocusable(false);
+        dataNasc.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
 
         jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nome de usuario.png")); // NOI18N
 
@@ -138,22 +143,19 @@ public class alterarinformações extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(389, 389, 389)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(311, 311, 311)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(sair)
                 .addGap(17, 17, 17))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(sair, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 
@@ -183,43 +185,11 @@ public class alterarinformações extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Senha atual__.png")); // NOI18N
 
-        verSenha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\versenhaadm (1).png")); // NOI18N
-        verSenha.setContentAreaFilled(false);
-        verSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verSenhaActionPerformed(evt);
-            }
-        });
-
-        naoVerSenha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\naoversenhaadm (1).png")); // NOI18N
-        naoVerSenha.setContentAreaFilled(false);
-        naoVerSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                naoVerSenhaActionPerformed(evt);
-            }
-        });
-
         pwdNovaSenha.setBackground(new java.awt.Color(220, 239, 235));
         pwdNovaSenha.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
         pwdNovaSenha.setForeground(new java.awt.Color(51, 78, 73));
         pwdNovaSenha.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3))); // NOI18N
         pwdNovaSenha.setCaretColor(new java.awt.Color(0, 102, 102));
-
-        verSenhaNova.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\versenhaadm (1).png")); // NOI18N
-        verSenhaNova.setContentAreaFilled(false);
-        verSenhaNova.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                verSenhaNovaActionPerformed(evt);
-            }
-        });
-
-        naoVerSenhaNova.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\naoversenhaadm (1).png")); // NOI18N
-        naoVerSenhaNova.setContentAreaFilled(false);
-        naoVerSenhaNova.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                naoVerSenhaNovaActionPerformed(evt);
-            }
-        });
 
         pwdsenhaAtual.setBackground(new java.awt.Color(220, 239, 235));
         pwdsenhaAtual.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
@@ -228,6 +198,73 @@ public class alterarinformações extends javax.swing.JFrame {
         pwdsenhaAtual.setCaretColor(new java.awt.Color(0, 102, 102));
 
         jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova senha_.png")); // NOI18N
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Sobrenome_.png")); // NOI18N
+
+        NomeUsuario.setBackground(new java.awt.Color(220, 239, 235));
+        NomeUsuario.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
+        NomeUsuario.setForeground(new java.awt.Color(51, 78, 73));
+        NomeUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3))); // NOI18N
+        NomeUsuario.setCaretColor(new java.awt.Color(0, 102, 102));
+        NomeUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        NomeUsuario.setDisabledTextColor(new java.awt.Color(51, 78, 73));
+        NomeUsuario.setEnabled(false);
+        NomeUsuario.setFocusable(false);
+        NomeUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NomeUsuarioActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova dica de senha_.png")); // NOI18N
+
+        pwdNovaSenha1.setBackground(new java.awt.Color(220, 239, 235));
+        pwdNovaSenha1.setFont(new java.awt.Font("Segoe UI", 0, 25)); // NOI18N
+        pwdNovaSenha1.setForeground(new java.awt.Color(51, 78, 73));
+        pwdNovaSenha1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, " ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 3))); // NOI18N
+        pwdNovaSenha1.setCaretColor(new java.awt.Color(0, 102, 102));
+
+        editarSobrenome.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\editor.png")); // NOI18N
+        editarSobrenome.setContentAreaFilled(false);
+        editarSobrenome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                editarSobrenomeMouseClicked(evt);
+            }
+        });
+
+        verSenha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\cadastro\\versenhaadm (1).png")); // NOI18N
+        verSenha.setContentAreaFilled(false);
+        verSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                verSenhaMouseClicked(evt);
+            }
+        });
+
+        naoVerSenha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\cadastro\\naoversenhaadm (1).png")); // NOI18N
+        naoVerSenha.setContentAreaFilled(false);
+        naoVerSenha.setLabel("");
+        naoVerSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                naoVerSenhaMouseClicked(evt);
+            }
+        });
+
+        verNovaSenha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\cadastro\\versenhaadm (1).png")); // NOI18N
+        verNovaSenha.setContentAreaFilled(false);
+        verNovaSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                verNovaSenhaMouseClicked(evt);
+            }
+        });
+
+        naoVerNovaSenha.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\cadastro\\naoversenhaadm (1).png")); // NOI18N
+        naoVerNovaSenha.setContentAreaFilled(false);
+        naoVerNovaSenha.setLabel("");
+        naoVerNovaSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                naoVerNovaSenhaMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -239,54 +276,77 @@ public class alterarinformações extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
+                                .addComponent(Nome, javax.swing.GroupLayout.PREFERRED_SIZE, 722, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(editarNome))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(dataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(editarNasc))
+                            .addComponent(boxGrau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(NomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(editarNomeUsuario))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(jLabel6))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel2))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel4))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel5)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel7)
-                                        .addGap(15, 15, 15)
-                                        .addComponent(pwdsenhaAtual, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(verSenha)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(naoVerSenha)
-                                        .addGap(40, 40, 40)
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(pwdNovaSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(verSenhaNova)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(naoVerSenhaNova))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
-                                        .addGap(37, 37, 37)
-                                        .addComponent(dataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(editarNasc))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel2)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(Nome))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel6)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(NomeUsuario))
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jLabel5)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(boxGrau, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGap(102, 102, 102)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(editarNomeUsuario)
-                                            .addComponent(editarNome, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(Sobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(editarSobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(6, 6, 6)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                                        .addGap(6, 6, 6)
+                                                        .addComponent(jLabel8))
+                                                    .addComponent(pwdNovaSenha1, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                                        .addComponent(pwdNovaSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(verNovaSenha)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(naoVerNovaSenha))))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(jLabel3))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(pwdsenhaAtual, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(verSenha)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(naoVerSenha))))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(120, 120, 120)
+                                        .addComponent(jLabel9)))
+                                .addGap(913, 913, 913))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(597, 597, 597)
-                                .addComponent(voltaLogin)))
-                        .addGap(102, 273, Short.MAX_VALUE)))
+                                .addGap(120, 120, 120)
+                                .addComponent(jLabel7)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(597, 597, 597)
+                        .addComponent(voltaLogin)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -294,37 +354,56 @@ public class alterarinformações extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Nome))
-                    .addComponent(editarNome))
-                .addGap(50, 50, 50)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(NomeUsuario)
-                    .addComponent(editarNomeUsuario, javax.swing.GroupLayout.Alignment.LEADING))
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(editarNasc, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(dataNasc, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(50, 50, 50)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(boxGrau))
-                .addGap(48, 48, 48)
+                .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(naoVerSenhaNova, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(verSenhaNova, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pwdsenhaAtual, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pwdNovaSenha)
-                    .addComponent(verSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(naoVerSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(35, 35, 35)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(editarNome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Sobrenome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                    .addComponent(Nome, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(editarSobrenome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(naoVerSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(verSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(pwdsenhaAtual, javax.swing.GroupLayout.DEFAULT_SIZE, 54, Short.MAX_VALUE))
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(editarNomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NomeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel4)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(editarNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dataNasc, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(boxGrau, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(pwdNovaSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                            .addComponent(verNovaSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(naoVerNovaSenha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(pwdNovaSenha1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(23, 23, 23)
                 .addComponent(voltaLogin)
                 .addGap(253, 253, 253))
         );
@@ -349,30 +428,6 @@ public class alterarinformações extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void verSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verSenhaActionPerformed
-        naoVerSenha.setVisible(true);
-        verSenha.setVisible(false);
-        pwdsenhaAtual.setEchoChar((char)0);
-    }//GEN-LAST:event_verSenhaActionPerformed
-
-    private void naoVerSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naoVerSenhaActionPerformed
-        verSenha.setVisible(true);
-        naoVerSenha.setVisible(false);
-        pwdsenhaAtual.setEchoChar('*');
-    }//GEN-LAST:event_naoVerSenhaActionPerformed
-
-    private void verSenhaNovaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verSenhaNovaActionPerformed
-        naoVerSenhaNova.setVisible(true);
-        verSenhaNova.setVisible(false);
-        pwdNovaSenha.setEchoChar((char)0);
-    }//GEN-LAST:event_verSenhaNovaActionPerformed
-
-    private void naoVerSenhaNovaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_naoVerSenhaNovaActionPerformed
-        verSenhaNova.setVisible(true);
-        naoVerSenhaNova.setVisible(false);
-        pwdNovaSenha.setEchoChar('*');
-    }//GEN-LAST:event_naoVerSenhaNovaActionPerformed
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
         // TODO add your handling code here:
@@ -399,6 +454,40 @@ public class alterarinformações extends javax.swing.JFrame {
     private void voltaLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_voltaLoginMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_voltaLoginMouseClicked
+
+    private void editarSobrenomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editarSobrenomeMouseClicked
+        Sobrenome.setEditable(true);
+        Sobrenome.setEnabled(true);
+        Sobrenome.setFocusable(true);
+    }//GEN-LAST:event_editarSobrenomeMouseClicked
+
+    private void NomeUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NomeUsuarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NomeUsuarioActionPerformed
+
+    private void verSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verSenhaMouseClicked
+        naoVerSenha.setVisible(true);
+        verSenha.setVisible(false);
+        pwdsenhaAtual.setEchoChar((char)0);
+    }//GEN-LAST:event_verSenhaMouseClicked
+
+    private void naoVerSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_naoVerSenhaMouseClicked
+        verSenha.setVisible(true);
+        naoVerSenha.setVisible(false);
+        pwdsenhaAtual.setEchoChar('*');
+    }//GEN-LAST:event_naoVerSenhaMouseClicked
+
+    private void verNovaSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_verNovaSenhaMouseClicked
+         naoVerNovaSenha.setVisible(true);
+        verNovaSenha.setVisible(false);
+        pwdNovaSenha.setEchoChar((char)0);
+    }//GEN-LAST:event_verNovaSenhaMouseClicked
+
+    private void naoVerNovaSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_naoVerNovaSenhaMouseClicked
+        verNovaSenha.setVisible(true);
+        naoVerNovaSenha.setVisible(false);
+        pwdNovaSenha.setEchoChar('*');
+    }//GEN-LAST:event_naoVerNovaSenhaMouseClicked
 
     /**
      * @param args the command line arguments
@@ -438,27 +527,32 @@ public class alterarinformações extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Nome;
     private javax.swing.JTextField NomeUsuario;
+    private javax.swing.JTextField Sobrenome;
     private javax.swing.JComboBox<String> boxGrau;
     private javax.swing.JFormattedTextField dataNasc;
     private javax.swing.JButton editarNasc;
     private javax.swing.JButton editarNome;
     private javax.swing.JButton editarNomeUsuario;
+    private javax.swing.JButton editarSobrenome;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton naoVerNovaSenha;
     private javax.swing.JButton naoVerSenha;
-    private javax.swing.JButton naoVerSenhaNova;
     private javax.swing.JPasswordField pwdNovaSenha;
+    private javax.swing.JPasswordField pwdNovaSenha1;
     private javax.swing.JPasswordField pwdsenhaAtual;
     private javax.swing.JButton sair;
+    private javax.swing.JButton verNovaSenha;
     private javax.swing.JButton verSenha;
-    private javax.swing.JButton verSenhaNova;
     private javax.swing.JButton voltaLogin;
     // End of variables declaration//GEN-END:variables
 }
