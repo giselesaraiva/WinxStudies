@@ -43,6 +43,11 @@ public class dadosAlteradosComSucesso extends javax.swing.JFrame {
 
         continuar1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\continuar (5).png")); // NOI18N
         continuar1.setContentAreaFilled(false);
+        continuar1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                continuar1MouseClicked(evt);
+            }
+        });
         continuar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 continuar1ActionPerformed(evt);
@@ -118,6 +123,10 @@ public class dadosAlteradosComSucesso extends javax.swing.JFrame {
     private void continuar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continuar1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_continuar1ActionPerformed
+
+    private void continuar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_continuar1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_continuar1MouseClicked
 
     /**
      * @param args the command line arguments
