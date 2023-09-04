@@ -31,8 +31,6 @@ public class QuestoesAdm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         excluir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -49,30 +47,15 @@ public class QuestoesAdm extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(209, 235, 229));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Filtrar por_.png")); // NOI18N
-
-        jComboBox1.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(0, 80, 80));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Relevância", "Ordem alfabetica", "Grau de escolaridade" }));
-        jComboBox1.setRequestFocusEnabled(false);
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 10, Short.MAX_VALUE))
+            .addGap(0, 46, Short.MAX_VALUE)
         );
 
         excluir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\excluir (1).png")); // NOI18N
@@ -119,7 +102,6 @@ public class QuestoesAdm extends javax.swing.JFrame {
 
         verQuestão.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\verQuestão (2).png")); // NOI18N
         verQuestão.setContentAreaFilled(false);
-        verQuestão.setLabel("");
 
         editar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\editar (1).png")); // NOI18N
         editar.setContentAreaFilled(false);
@@ -151,7 +133,7 @@ public class QuestoesAdm extends javax.swing.JFrame {
                 .addComponent(excluir)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 13, Short.MAX_VALUE)
+                .addGap(0, 14, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1)
                     .addComponent(addQuestao, javax.swing.GroupLayout.DEFAULT_SIZE, 1313, Short.MAX_VALUE))
@@ -167,10 +149,10 @@ public class QuestoesAdm extends javax.swing.JFrame {
                         .addComponent(editar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(verQuestão, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(addQuestao)
-                .addGap(18, 18, 18))
+                .addGap(19, 19, 19))
         );
 
         voltarWinx.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\voltarWinx.png")); // NOI18N
@@ -194,7 +176,7 @@ public class QuestoesAdm extends javax.swing.JFrame {
                         .addGap(72, 72, 72)
                         .addComponent(voltarWinx, javax.swing.GroupLayout.PREFERRED_SIZE, 433, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
+                        .addGap(89, 89, 89)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(217, Short.MAX_VALUE))
         );
@@ -205,7 +187,7 @@ public class QuestoesAdm extends javax.swing.JFrame {
                 .addComponent(voltarWinx)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel1)
-                .addGap(48, 48, 48)
+                .addGap(21, 21, 21)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(62, Short.MAX_VALUE))
         );
@@ -234,13 +216,13 @@ public class QuestoesAdm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_excluirActionPerformed
 
-    private void editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_editarActionPerformed
-
     private void addQuestaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addQuestaoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addQuestaoActionPerformed
+
+    private void editarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -281,9 +263,7 @@ public class QuestoesAdm extends javax.swing.JFrame {
     private javax.swing.JButton addQuestao;
     private javax.swing.JButton editar;
     private javax.swing.JButton excluir;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
