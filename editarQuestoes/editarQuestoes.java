@@ -45,10 +45,6 @@ public class editarQuestoes extends javax.swing.JFrame {
         A3 = new javax.swing.JTextField();
         A4 = new javax.swing.JTextField();
         A5 = new javax.swing.JTextField();
-        pSeletivo = new javax.swing.JComboBox<>();
-        materia = new javax.swing.JComboBox<>();
-        editarpSeletivo = new javax.swing.JButton();
-        editarMateria = new javax.swing.JButton();
         editarEnunciado = new javax.swing.JButton();
         editarA1 = new javax.swing.JButton();
         editarA2 = new javax.swing.JButton();
@@ -176,46 +172,6 @@ public class editarQuestoes extends javax.swing.JFrame {
             }
         });
 
-        pSeletivo.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
-        pSeletivo.setForeground(new java.awt.Color(0, 80, 80));
-        pSeletivo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Processo Seletivo:", "Enem", "Macro", "SIS-1", "PSC-1", "SIS-2", "PSC-2", "SIS-3", "PSC-3" }));
-        pSeletivo.setEnabled(false);
-        pSeletivo.setFocusable(false);
-        pSeletivo.setRequestFocusEnabled(false);
-
-        materia.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
-        materia.setForeground(new java.awt.Color(0, 80, 80));
-        materia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Matéria:", "Matemátia", "Português", "Literatura", "Física", "Química", "Biologia" }));
-        materia.setEnabled(false);
-        materia.setFocusable(false);
-        materia.setRequestFocusEnabled(false);
-
-        editarpSeletivo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\editor.png")); // NOI18N
-        editarpSeletivo.setContentAreaFilled(false);
-        editarpSeletivo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                editarpSeletivoMouseClicked(evt);
-            }
-        });
-        editarpSeletivo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editarpSeletivoActionPerformed(evt);
-            }
-        });
-
-        editarMateria.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\editor.png")); // NOI18N
-        editarMateria.setContentAreaFilled(false);
-        editarMateria.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                editarMateriaMouseClicked(evt);
-            }
-        });
-        editarMateria.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editarMateriaActionPerformed(evt);
-            }
-        });
-
         editarEnunciado.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\editor.png")); // NOI18N
         editarEnunciado.setContentAreaFilled(false);
         editarEnunciado.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -301,14 +257,6 @@ public class editarQuestoes extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(pSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(editarpSeletivo)
-                        .addGap(211, 211, 211)
-                        .addComponent(materia, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(editarMateria))
                     .addComponent(jLabel3)
                     .addComponent(jLabel2)
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -348,17 +296,6 @@ public class editarQuestoes extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(pSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(materia))
-                        .addGap(24, 24, 24))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(editarMateria)
-                            .addComponent(editarpSeletivo))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -430,21 +367,22 @@ public class editarQuestoes extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 703, Short.MAX_VALUE)
-                .addComponent(btnFinalizar)
-                .addGap(635, 635, 635))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(62, 62, 62)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(89, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jLabel1)
-                        .addGap(537, 537, 537)
+                        .addGap(494, 494, 494)
                         .addComponent(SAIR)
                         .addGap(55, 55, 55))))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(668, 668, 668)
+                .addComponent(btnFinalizar)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -456,11 +394,11 @@ public class editarQuestoes extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(SAIR, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGap(18, 78, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(34, 34, 34)
                 .addComponent(btnFinalizar)
-                .addGap(163, 163, 163))
+                .addGap(159, 159, 159))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -511,22 +449,6 @@ public class editarQuestoes extends javax.swing.JFrame {
     private void btnFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFinalizarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnFinalizarActionPerformed
-
-    private void editarpSeletivoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editarpSeletivoMouseClicked
-         pSeletivo.setEnabled(true);   
-    }//GEN-LAST:event_editarpSeletivoMouseClicked
-
-    private void editarpSeletivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarpSeletivoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_editarpSeletivoActionPerformed
-
-    private void editarMateriaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editarMateriaMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_editarMateriaMouseClicked
-
-    private void editarMateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editarMateriaActionPerformed
-        materia.setEnabled(true);
-    }//GEN-LAST:event_editarMateriaActionPerformed
 
     private void editarEnunciadoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editarEnunciadoMouseClicked
         // TODO add your handling code here:
@@ -635,8 +557,6 @@ public class editarQuestoes extends javax.swing.JFrame {
     private javax.swing.JButton editarA4;
     private javax.swing.JButton editarA5;
     private javax.swing.JButton editarEnunciado;
-    private javax.swing.JButton editarMateria;
-    private javax.swing.JButton editarpSeletivo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -644,8 +564,6 @@ public class editarQuestoes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JComboBox<String> materia;
-    private javax.swing.JComboBox<String> pSeletivo;
     private javax.swing.JRadioButton radioA1;
     private javax.swing.JRadioButton radioA2;
     private javax.swing.JRadioButton radioA3;
