@@ -44,10 +44,9 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         agendaMenu = new javax.swing.JButton();
         notacMenu = new javax.swing.JButton();
         estudanteMenu = new javax.swing.JButton();
-        redacaoMenu = new javax.swing.JButton();
         questoesMenu = new javax.swing.JButton();
-        redacaoMenu1 = new javax.swing.JButton();
-        redacaoMenu2 = new javax.swing.JButton();
+        checklistMenu = new javax.swing.JButton();
+        redacaoMenu = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         xMenuESTUDANTE = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -56,6 +55,7 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         redacaoPrincipal = new javax.swing.JButton();
         questoesPrincipal = new javax.swing.JButton();
         agendaPrincipal = new javax.swing.JButton();
+        agendaPrincipal1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,16 +79,15 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        ChecklistAtalho.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\Checklist (3).png")); // NOI18N
+        ChecklistAtalho.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\Checklist (3).png")); // NOI18N
         ChecklistAtalho.setContentAreaFilled(false);
-        ChecklistAtalho.setLabel("");
         ChecklistAtalho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChecklistAtalhoMouseClicked(evt);
             }
         });
 
-        progressoAtalho.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\Progresso (1).png")); // NOI18N
+        progressoAtalho.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\Progresso (1).png")); // NOI18N
         progressoAtalho.setContentAreaFilled(false);
         progressoAtalho.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -96,7 +95,7 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        questoesAtalho1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\Questões (2).png")); // NOI18N
+        questoesAtalho1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\Questões (2).png")); // NOI18N
         questoesAtalho1.setContentAreaFilled(false);
         questoesAtalho1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -118,8 +117,8 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                 .addGap(59, 59, 59)
                 .addComponent(progressoAtalho)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Usuario)
-                .addGap(341, 341, 341))
+                .addComponent(Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,7 +133,7 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                             .addComponent(progressoAtalho, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ChecklistAtalho)
                             .addComponent(questoesAtalho1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
 
         menuESTUDANTE.setBackground(new java.awt.Color(185, 215, 208));
@@ -182,13 +181,6 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        redacaoMenu.setContentAreaFilled(false);
-        redacaoMenu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                redacaoMenuMouseClicked(evt);
-            }
-        });
-
         questoesMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Tela Inicial Adm\\QUESTÕES.png")); // NOI18N
         questoesMenu.setContentAreaFilled(false);
         questoesMenu.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -197,24 +189,30 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        redacaoMenu1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\CHECKLIST (1).png")); // NOI18N
-        redacaoMenu1.setContentAreaFilled(false);
-        redacaoMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+        checklistMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\CHECKLIST (1).png")); // NOI18N
+        checklistMenu.setContentAreaFilled(false);
+        checklistMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        checklistMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                redacaoMenu1MouseClicked(evt);
+                checklistMenuMouseClicked(evt);
+            }
+        });
+        checklistMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checklistMenuActionPerformed(evt);
             }
         });
 
-        redacaoMenu2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Tela Inicial Adm\\REDAÇÃO (1).png")); // NOI18N
-        redacaoMenu2.setContentAreaFilled(false);
-        redacaoMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+        redacaoMenu.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Tela Inicial Adm\\REDAÇÃO (1).png")); // NOI18N
+        redacaoMenu.setContentAreaFilled(false);
+        redacaoMenu.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                redacaoMenu2MouseClicked(evt);
+                redacaoMenuMouseClicked(evt);
             }
         });
-        redacaoMenu2.addActionListener(new java.awt.event.ActionListener() {
+        redacaoMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                redacaoMenu2ActionPerformed(evt);
+                redacaoMenuActionPerformed(evt);
             }
         });
 
@@ -223,7 +221,7 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(15, 15, 15)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -231,13 +229,11 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                             .addComponent(agendaMenu)
                             .addComponent(conteudopMenu)
                             .addComponent(notacMenu)
-                            .addComponent(redacaoMenu1)
+                            .addComponent(checklistMenu)
                             .addComponent(questoesMenu))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(redacaoMenu)
-                            .addComponent(redacaoMenu2))
+                        .addComponent(redacaoMenu)
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel3Layout.setVerticalGroup(
@@ -246,23 +242,21 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addComponent(agendaMenu)
                 .addGap(18, 18, 18)
-                .addComponent(redacaoMenu1)
+                .addComponent(checklistMenu)
                 .addGap(18, 18, 18)
                 .addComponent(conteudopMenu)
                 .addGap(18, 18, 18)
                 .addComponent(estudanteMenu)
                 .addGap(18, 18, 18)
                 .addComponent(notacMenu)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(redacaoMenu)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, Short.MAX_VALUE)
                 .addComponent(questoesMenu)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(redacaoMenu2)
+                .addGap(18, 18, 18)
+                .addComponent(redacaoMenu)
                 .addGap(36, 36, 36))
         );
 
-        jLabel3.setText("                                                                                                                   ");
+        jLabel3.setText("                                                                                                       ");
 
         xMenuESTUDANTE.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Tela Inicial Adm\\X.png")); // NOI18N
         xMenuESTUDANTE.setContentAreaFilled(false);
@@ -276,18 +270,14 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         menuESTUDANTE.setLayout(menuESTUDANTELayout);
         menuESTUDANTELayout.setHorizontalGroup(
             menuESTUDANTELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(menuESTUDANTELayout.createSequentialGroup()
-                .addGroup(menuESTUDANTELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(menuESTUDANTELayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(menuESTUDANTELayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(xMenuESTUDANTE)))
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuESTUDANTELayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(xMenuESTUDANTE, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, menuESTUDANTELayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         menuESTUDANTELayout.setVerticalGroup(
             menuESTUDANTELayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -298,14 +288,13 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel2.setText("                                                                                                     ");
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\tonton+winxstudies (4).png")); // NOI18N
+        jLabel2.setText("                                                                      ");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\tonton+winxstudies (4).png")); // NOI18N
-
-        checklistPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\CHECKLISTESTUDANTE.png")); // NOI18N
+        checklistPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\CHECKLISTESTUDANTE.png")); // NOI18N
         checklistPrincipal.setContentAreaFilled(false);
         checklistPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -313,7 +302,6 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        redacaoPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\REDACAOESTUDANTE (1).png")); // NOI18N
         redacaoPrincipal.setContentAreaFilled(false);
         redacaoPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -321,7 +309,7 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        questoesPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\QUESTOESESTUDANTE (4).png")); // NOI18N
+        questoesPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\QUESTOESESTUDANTE (4).png")); // NOI18N
         questoesPrincipal.setContentAreaFilled(false);
         questoesPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -329,11 +317,19 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             }
         });
 
-        agendaPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Nova pasta (2)\\AGENDAESTUDANTE.png")); // NOI18N
+        agendaPrincipal.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\AGENDAESTUDANTE.png")); // NOI18N
         agendaPrincipal.setContentAreaFilled(false);
         agendaPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 agendaPrincipalMouseClicked(evt);
+            }
+        });
+
+        agendaPrincipal1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\REDACAOESTUDANTE (1).png")); // NOI18N
+        agendaPrincipal1.setContentAreaFilled(false);
+        agendaPrincipal1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                agendaPrincipal1MouseClicked(evt);
             }
         });
 
@@ -345,20 +341,23 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(menuESTUDANTE, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
+                .addGap(48, 48, 48)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(questoesPrincipal)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(checklistPrincipal)
-                        .addGap(86, 86, 86)
-                        .addComponent(agendaPrincipal)
-                        .addGap(89, 89, 89)
-                        .addComponent(redacaoPrincipal))
-                    .addComponent(jLabel1))
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 353, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(questoesPrincipal)
+                                .addGap(82, 82, 82)
+                                .addComponent(checklistPrincipal)
+                                .addGap(57, 57, 57)
+                                .addComponent(agendaPrincipal)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(redacaoPrincipal))
+                            .addComponent(jLabel1))
+                        .addGap(18, 18, Short.MAX_VALUE)
+                        .addComponent(agendaPrincipal1))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1414, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(76, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -366,39 +365,41 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(106, 106, 106)
-                                .addComponent(jLabel2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(agendaPrincipal))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(menuESTUDANTE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(redacaoPrincipal)
-                                .addGap(44, 44, 44))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(58, 58, 58)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(agendaPrincipal)
-                                    .addComponent(checklistPrincipal)
-                                    .addComponent(questoesPrincipal))
-                                .addContainerGap())))))
+                                    .addComponent(redacaoPrincipal, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(agendaPrincipal1, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(questoesPrincipal, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(checklistPrincipal, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addGap(143, 143, 143))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(menuESTUDANTE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1531, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -420,25 +421,21 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_menuESTUDANTEAncestorMoved
 
-    private void redacaoMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redacaoMenu2ActionPerformed
+    private void redacaoMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_redacaoMenuActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_redacaoMenu2ActionPerformed
-
-    private void redacaoMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redacaoMenu2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_redacaoMenu2MouseClicked
-
-    private void redacaoMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redacaoMenu1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_redacaoMenu1MouseClicked
-
-    private void questoesMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_questoesMenuMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_questoesMenuMouseClicked
+    }//GEN-LAST:event_redacaoMenuActionPerformed
 
     private void redacaoMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redacaoMenuMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_redacaoMenuMouseClicked
+
+    private void checklistMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_checklistMenuMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checklistMenuMouseClicked
+
+    private void questoesMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_questoesMenuMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_questoesMenuMouseClicked
 
     private void estudanteMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estudanteMenuMouseClicked
         // TODO add your handling code here:
@@ -484,6 +481,14 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_redacaoPrincipalMouseClicked
 
+    private void checklistMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checklistMenuActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_checklistMenuActionPerformed
+
+    private void agendaPrincipal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agendaPrincipal1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_agendaPrincipal1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -519,7 +524,7 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
         });
     }
     
-    int w=445;
+    int w=425;
     int h=485;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -527,6 +532,8 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
     private javax.swing.JButton Usuario;
     private javax.swing.JButton agendaMenu;
     private javax.swing.JButton agendaPrincipal;
+    private javax.swing.JButton agendaPrincipal1;
+    private javax.swing.JButton checklistMenu;
     private javax.swing.JButton checklistPrincipal;
     private javax.swing.JButton conteudopMenu;
     private javax.swing.JButton estudanteMenu;
@@ -544,8 +551,6 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
     private javax.swing.JButton questoesMenu;
     private javax.swing.JButton questoesPrincipal;
     private javax.swing.JButton redacaoMenu;
-    private javax.swing.JButton redacaoMenu1;
-    private javax.swing.JButton redacaoMenu2;
     private javax.swing.JButton redacaoPrincipal;
     private javax.swing.JButton xMenuESTUDANTE;
     // End of variables declaration//GEN-END:variables
