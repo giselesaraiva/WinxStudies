@@ -15,6 +15,7 @@ public class telaPontuacaoBoa extends javax.swing.JFrame {
      */
     public telaPontuacaoBoa() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
