@@ -18,6 +18,7 @@ public class atividadesConcluidas extends javax.swing.JFrame {
      */
     public atividadesConcluidas() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
         tabela();
     }
     
