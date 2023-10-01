@@ -18,7 +18,6 @@ public class atividadesConcluidas extends javax.swing.JFrame {
      */
     public atividadesConcluidas() {
         initComponents();
-        setExtendedState(MAXIMIZED_BOTH);
         tabela();
     }
     
@@ -27,7 +26,7 @@ public class atividadesConcluidas extends javax.swing.JFrame {
         header.setBackground(Color.decode("#D7F2EC"));
         tabela.setShowGrid(true);
         tabela.setGridColor(Color.decode("#D7F2EC"));
-        
+        setExtendedState(MAXIMIZED_BOTH);
 
 
     }
@@ -45,12 +44,12 @@ public class atividadesConcluidas extends javax.swing.JFrame {
         voltarfeito = new javax.swing.JButton();
         menu = new javax.swing.JPanel();
         SAIR = new javax.swing.JButton();
-        voltarr = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabela = new javax.swing.JTable();
         verAtividade = new javax.swing.JButton();
         arquivarAtividade = new javax.swing.JButton();
+        verAtividade1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,14 +83,6 @@ public class atividadesConcluidas extends javax.swing.JFrame {
                 .addGap(9, 9, 9))
         );
 
-        voltarr.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\voltarr (2).png")); // NOI18N
-        voltarr.setContentAreaFilled(false);
-        voltarr.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                voltarrActionPerformed(evt);
-            }
-        });
-
         jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Atividades concluidas.png")); // NOI18N
 
         jScrollPane1.setBorder(null);
@@ -120,7 +111,6 @@ public class atividadesConcluidas extends javax.swing.JFrame {
             }
         });
         tabela.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        tabela.setFocusable(false);
         tabela.setGridColor(new java.awt.Color(175, 203, 207));
         tabela.setOpaque(false);
         tabela.setRowHeight(30);
@@ -130,10 +120,16 @@ public class atividadesConcluidas extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tabela);
 
         verAtividade.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\ver atividade (3).png")); // NOI18N
+        verAtividade.setBorderPainted(false);
         verAtividade.setContentAreaFilled(false);
 
         arquivarAtividade.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\arquivado (1).png")); // NOI18N
+        arquivarAtividade.setBorderPainted(false);
         arquivarAtividade.setContentAreaFilled(false);
+
+        verAtividade1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\voltarr (2).png")); // NOI18N
+        verAtividade1.setBorderPainted(false);
+        verAtividade1.setContentAreaFilled(false);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -148,9 +144,9 @@ public class atividadesConcluidas extends javax.swing.JFrame {
                 .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(voltarr)
-                .addGap(38, 38, 38)
+                .addGap(33, 33, 33)
+                .addComponent(verAtividade1)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(verAtividade)
@@ -165,20 +161,21 @@ public class atividadesConcluidas extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 57, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGap(0, 62, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(verAtividade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(arquivarAtividade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(18, 18, 18)
+                                    .addComponent(arquivarAtividade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(verAtividade1))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 621, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(86, 86, 86))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(voltarr)
-                        .addGap(552, 552, 552)
+                        .addGap(596, 596, 596)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(voltarfeito)
                             .addComponent(menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -204,10 +201,6 @@ public class atividadesConcluidas extends javax.swing.JFrame {
     private void SAIRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SAIRActionPerformed
 
     }//GEN-LAST:event_SAIRActionPerformed
-
-    private void voltarrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_voltarrActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_voltarrActionPerformed
 
     /**
      * @param args the command line arguments
@@ -253,7 +246,7 @@ public class atividadesConcluidas extends javax.swing.JFrame {
     private javax.swing.JPanel menu;
     public javax.swing.JTable tabela;
     private javax.swing.JButton verAtividade;
+    private javax.swing.JButton verAtividade1;
     private javax.swing.JButton voltarfeito;
-    private javax.swing.JButton voltarr;
     // End of variables declaration//GEN-END:variables
 }
