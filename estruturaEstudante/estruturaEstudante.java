@@ -15,6 +15,7 @@ public class estruturaEstudante extends javax.swing.JFrame {
      */
     public estruturaEstudante() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
