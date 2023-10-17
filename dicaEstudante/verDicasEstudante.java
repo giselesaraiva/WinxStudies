@@ -15,6 +15,8 @@ public class verDicasEstudante extends javax.swing.JFrame {
      */
     public verDicasEstudante() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
+        
     }
 
     /**
