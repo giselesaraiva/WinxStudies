@@ -97,6 +97,11 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
                 rankingAtalhoMouseClicked(evt);
             }
         });
+        rankingAtalho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rankingAtalhoActionPerformed(evt);
+            }
+        });
 
         questoesAtalho1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\TelaInicialEstudante\\Questões (2).png")); // NOI18N
         questoesAtalho1.setContentAreaFilled(false);
@@ -559,6 +564,10 @@ public class TELAINICIALDOESTUDANTE extends javax.swing.JFrame {
     private void progressoAtalhoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_progressoAtalhoMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_progressoAtalhoMouseClicked
+
+    private void rankingAtalhoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rankingAtalhoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rankingAtalhoActionPerformed
 
     /**
      * @param args the command line arguments
