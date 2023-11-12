@@ -45,7 +45,7 @@ public class principalAgenda extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtPAddconteudo = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
+        btnSalvar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         selecaoMes = new javax.swing.JComboBox<>();
@@ -100,7 +100,7 @@ public class principalAgenda extends javax.swing.JFrame {
         t40 = new javax.swing.JLabel();
         t41 = new javax.swing.JLabel();
         t42 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnApagar = new javax.swing.JButton();
         tituloAgenda = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         cardsAgenda = new javax.swing.JPanel();
@@ -108,7 +108,7 @@ public class principalAgenda extends javax.swing.JFrame {
         PanelInfo = new javax.swing.JPanel();
         lblAtivAgenda = new javax.swing.JLabel();
         lblAtivAgenda1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btnExcluir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -161,14 +161,14 @@ public class principalAgenda extends javax.swing.JFrame {
         txtPAddconteudo.setSelectionColor(new java.awt.Color(0, 153, 153));
         jScrollPane1.setViewportView(txtPAddconteudo);
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Salvar Calendario (1).png")); // NOI18N
-        jButton1.setToolTipText("");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnSalvar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Salvar Calendario (1).png")); // NOI18N
+        btnSalvar.setToolTipText("");
+        btnSalvar.setBorderPainted(false);
+        btnSalvar.setContentAreaFilled(false);
+        btnSalvar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnSalvarActionPerformed(evt);
             }
         });
 
@@ -593,13 +593,13 @@ public class principalAgenda extends javax.swing.JFrame {
                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\apagar Calendario.png")); // NOI18N
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnApagar.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\apagar Calendario.png")); // NOI18N
+        btnApagar.setBorderPainted(false);
+        btnApagar.setContentAreaFilled(false);
+        btnApagar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnApagar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnApagarActionPerformed(evt);
             }
         });
 
@@ -613,9 +613,9 @@ public class principalAgenda extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(93, 93, 93)
-                        .addComponent(jButton1)
+                        .addComponent(btnSalvar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton3)
+                        .addComponent(btnApagar)
                         .addGap(84, 84, 84))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
@@ -638,8 +638,8 @@ public class principalAgenda extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(btnSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnApagar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -662,14 +662,14 @@ public class principalAgenda extends javax.swing.JFrame {
         lblAtivAgenda1.setForeground(new java.awt.Color(35, 61, 56));
         lblAtivAgenda1.setText("10/11/2023");
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\excluir (4).png")); // NOI18N
-        jButton2.setToolTipText("Excluir");
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnExcluir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\excluir (4).png")); // NOI18N
+        btnExcluir.setToolTipText("Excluir");
+        btnExcluir.setBorderPainted(false);
+        btnExcluir.setContentAreaFilled(false);
+        btnExcluir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnExcluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnExcluirActionPerformed(evt);
             }
         });
 
@@ -683,7 +683,7 @@ public class principalAgenda extends javax.swing.JFrame {
                     .addComponent(lblAtivAgenda, javax.swing.GroupLayout.PREFERRED_SIZE, 950, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblAtivAgenda1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(btnExcluir)
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         PanelInfoLayout.setVerticalGroup(
@@ -692,7 +692,7 @@ public class principalAgenda extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(PanelInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PanelInfoLayout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                        .addComponent(btnExcluir, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(PanelInfoLayout.createSequentialGroup()
                         .addComponent(lblAtivAgenda)
@@ -779,21 +779,22 @@ public class principalAgenda extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        PanelBase.setVisible(true);
+    }//GEN-LAST:event_btnSalvarActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnApagarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnApagarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnApagarActionPerformed
 
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_sairActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnExcluirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -834,10 +835,10 @@ public class principalAgenda extends javax.swing.JFrame {
     private javax.swing.JPanel PanelBase;
     private javax.swing.JPanel PanelInfo;
     private org.antlr.v4.runtime.ANTLRInputStream aNTLRInputStream1;
+    private javax.swing.JButton btnApagar;
+    private javax.swing.JButton btnExcluir;
+    private javax.swing.JButton btnSalvar;
     private javax.swing.JPanel cardsAgenda;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
