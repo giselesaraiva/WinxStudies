@@ -4,9 +4,7 @@
  */
 package agenda;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -14,16 +12,13 @@ import javax.swing.JOptionPane;
  */
 public class principalAgenda extends javax.swing.JFrame {
     
-    int anoFIXO = 0, mesFIXO = 0, diaFIXO = 0;
-    int anoAltera = 0, mesAltera = 0, diaAltera = 0;
-    int valorSelecao  = 0;
 
     /**
      * Creates new form principalAgenda
      */
     public principalAgenda() {
         initComponents();
-        iniciaCalendario();
+        
         setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -47,7 +42,7 @@ public class principalAgenda extends javax.swing.JFrame {
         txtPAddconteudo = new javax.swing.JTextPane();
         btnSalvar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        jPanelCalendario = new javax.swing.JPanel();
         selecaoMes = new javax.swing.JComboBox<>();
         selecaoAno = new javax.swing.JComboBox<>();
         jPanel5 = new javax.swing.JPanel();
@@ -174,8 +169,8 @@ public class principalAgenda extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Adicionar conteúdo (3).png")); // NOI18N
 
-        jPanel4.setBackground(new java.awt.Color(183, 213, 206));
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 112, 101)));
+        jPanelCalendario.setBackground(new java.awt.Color(183, 213, 206));
+        jPanelCalendario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 112, 101)));
 
         selecaoMes.setBackground(new java.awt.Color(229, 255, 249));
         selecaoMes.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -570,11 +565,11 @@ public class principalAgenda extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelCalendarioLayout = new javax.swing.GroupLayout(jPanelCalendario);
+        jPanelCalendario.setLayout(jPanelCalendarioLayout);
+        jPanelCalendarioLayout.setHorizontalGroup(
+            jPanelCalendarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCalendarioLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(selecaoMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -582,11 +577,11 @@ public class principalAgenda extends javax.swing.JFrame {
                 .addGap(32, 32, 32))
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        jPanelCalendarioLayout.setVerticalGroup(
+            jPanelCalendarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCalendarioLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(jPanelCalendarioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(selecaoMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(selecaoAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -609,7 +604,7 @@ public class principalAgenda extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanelCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(93, 93, 93)
@@ -642,7 +637,7 @@ public class principalAgenda extends javax.swing.JFrame {
                             .addComponent(btnApagar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jPanelCalendario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(23, 23, 23))
         );
 
@@ -844,8 +839,8 @@ public class principalAgenda extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanelCalendario;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblAtivAgenda;
@@ -906,20 +901,6 @@ public class principalAgenda extends javax.swing.JFrame {
     private javax.swing.JTextPane txtPAddconteudo;
     private org.antlr.v4.runtime.misc.Utils utils1;
     // End of variables declaration//GEN-END:variables
-
-    public void iniciaCalendario(){
-        SimpleDateFormat ano = new SimpleDateFormat("yyyy"); 
-        SimpleDateFormat mes = new SimpleDateFormat("MM"); 
-        SimpleDateFormat dia = new SimpleDateFormat("dd"); 
-        
-        anoFIXO = Integer.parseInt(ano.format(new Date()));
-        mesFIXO = Integer.parseInt(mes.format(new Date()));
-        diaFIXO = Integer.parseInt(dia.format(new Date()));
-        
-        //JOptionPane.showMessageDialog(null,diaFIXO+"/"+mesFIXO+"/"+anoFIXO);
-        
-       
-    }
     
     
 }
