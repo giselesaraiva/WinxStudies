@@ -132,6 +132,11 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
         novoConteudoProgramatico.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\add novo Conteudo (6).png")); // NOI18N
         novoConteudoProgramatico.setText("   ");
         novoConteudoProgramatico.setContentAreaFilled(false);
+        novoConteudoProgramatico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                novoConteudoProgramaticoActionPerformed(evt);
+            }
+        });
 
         tituloCunteudoProg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Conteúdo Programático.png")); // NOI18N
 
@@ -220,18 +225,38 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
 
         obrasLiterarias.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\provAnteriores (1).png")); // NOI18N
         obrasLiterarias.setContentAreaFilled(false);
+        obrasLiterarias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                obrasLiterariasActionPerformed(evt);
+            }
+        });
 
         provasAnteriores.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\provAnteriores (1).png")); // NOI18N
         provasAnteriores.setContentAreaFilled(false);
+        provasAnteriores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                provasAnterioresActionPerformed(evt);
+            }
+        });
 
         imprimir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\print.png")); // NOI18N
         imprimir.setText(" ");
         imprimir.setToolTipText("imprimir");
         imprimir.setContentAreaFilled(false);
+        imprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imprimirActionPerformed(evt);
+            }
+        });
 
         excluir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\excluir (5).png")); // NOI18N
         excluir.setToolTipText("imprimir");
         excluir.setContentAreaFilled(false);
+        excluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                excluirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -344,6 +369,26 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
     private void sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_sairActionPerformed
+
+    private void novoConteudoProgramaticoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_novoConteudoProgramaticoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_novoConteudoProgramaticoActionPerformed
+
+    private void imprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imprimirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_imprimirActionPerformed
+
+    private void excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_excluirActionPerformed
+
+    private void obrasLiterariasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_obrasLiterariasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_obrasLiterariasActionPerformed
+
+    private void provasAnterioresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_provasAnterioresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_provasAnterioresActionPerformed
 
     /**
      * @param args the command line arguments
