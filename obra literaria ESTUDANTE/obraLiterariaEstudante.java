@@ -4,6 +4,16 @@
  */
 package conteudoProgramatico;
 
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Font;
+import static java.awt.Frame.MAXIMIZED_BOTH;
+import javax.swing.JTable;
+import javax.swing.SwingConstants;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableCellRenderer;
+
 /**
  *
  * @author Gisele Vieira
@@ -14,7 +24,35 @@ public class obraLiterariaEstudante extends javax.swing.JFrame {
      * Creates new form obraLiterariaEstudante
      */
     public obraLiterariaEstudante() {
-        initComponents();
+       initComponents();
+        customizeTableHeader(jTable1);
+        setExtendedState(MAXIMIZED_BOTH);
+    }
+    
+    private void customizeTableHeader(JTable table) {
+        JTableHeader tableHeader = table.getTableHeader();
+        tableHeader.setDefaultRenderer(new CustomHeaderRenderer(tableHeader.getDefaultRenderer()));
+    }
+    
+    private static class CustomHeaderRenderer implements TableCellRenderer {
+        DefaultTableCellRenderer defaultRenderer;
+
+        public CustomHeaderRenderer(TableCellRenderer renderer) {
+            this.defaultRenderer = (DefaultTableCellRenderer) renderer;
+            defaultRenderer.setHorizontalAlignment(SwingConstants.CENTER);
+        }
+        
+         public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+            Component comp = defaultRenderer.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+
+            // Define a fonte personalizada para o cabeçalho da tabela
+            Font font = comp.getFont();
+            font = font.deriveFont(Font.BOLD, 18); // Altere o tamanho e o estilo da fonte conforme desejado
+            comp.setFont(font);
+            comp.setForeground(new Color(64, 108, 98));
+
+            return comp;
+        }
     }
 
     /**
