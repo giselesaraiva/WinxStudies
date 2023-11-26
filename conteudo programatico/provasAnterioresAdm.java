@@ -7,6 +7,7 @@ package conteudoProgramatico;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
+import static java.awt.Frame.MAXIMIZED_BOTH;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -17,13 +18,13 @@ import javax.swing.table.TableCellRenderer;
  *
  * @author Gisele Vieira
  */
-public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
+public class provasAnterioresAdm extends javax.swing.JFrame {
 
     /**
-     * Creates new form ConteudoProgramaticoAdm
+     * Creates new form provasAnterioresAdm
      */
-     public ConteudoProgramaticoAdm() {
-        initComponents();
+    public provasAnterioresAdm() {
+     initComponents();
         customizeTableHeader(jTable1);
         setExtendedState(MAXIMIZED_BOTH);
     }
@@ -67,22 +68,17 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         sair = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel4 = new javax.swing.JPanel();
-        novoConteudoProgramatico = new javax.swing.JButton();
-        tituloCunteudoProg2 = new javax.swing.JLabel();
+        addProvaA = new javax.swing.JButton();
+        tituloProvaA = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         previzuPDF = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        obrasLiterarias = new javax.swing.JButton();
-        provasAnteriores = new javax.swing.JButton();
         imprimir = new javax.swing.JButton();
         excluir = new javax.swing.JButton();
+        sair1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -111,7 +107,7 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1159, Short.MAX_VALUE)
                 .addComponent(sair)
                 .addGap(17, 17, 17))
         );
@@ -129,11 +125,16 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(230, 246, 243));
 
-        novoConteudoProgramatico.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\add novo Conteudo (6).png")); // NOI18N
-        novoConteudoProgramatico.setText("   ");
-        novoConteudoProgramatico.setContentAreaFilled(false);
+        addProvaA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\add novo Conteudo (6).png")); // NOI18N
+        addProvaA.setText("   ");
+        addProvaA.setContentAreaFilled(false);
+        addProvaA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addProvaAActionPerformed(evt);
+            }
+        });
 
-        tituloCunteudoProg2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Conteúdo Programático.png")); // NOI18N
+        tituloProvaA.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Provas Anteriores (1).png")); // NOI18N
 
         jPanel3.setBackground(new java.awt.Color(188, 214, 208));
 
@@ -211,81 +212,75 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
         jTable1.setSelectionForeground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setViewportView(jTable1);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\Outros (1).png")); // NOI18N
-        jLabel1.setText("jLabel1");
-
-        jSeparator1.setForeground(new java.awt.Color(69, 110, 101));
-
-        jSeparator2.setForeground(new java.awt.Color(69, 110, 101));
-
-        obrasLiterarias.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\provAnteriores (1).png")); // NOI18N
-        obrasLiterarias.setContentAreaFilled(false);
-
-        provasAnteriores.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\provAnteriores (1).png")); // NOI18N
-        provasAnteriores.setContentAreaFilled(false);
-
         imprimir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\print.png")); // NOI18N
         imprimir.setText(" ");
         imprimir.setToolTipText("imprimir");
         imprimir.setContentAreaFilled(false);
+        imprimir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imprimirActionPerformed(evt);
+            }
+        });
 
         excluir.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\excluir (5).png")); // NOI18N
         excluir.setToolTipText("imprimir");
         excluir.setContentAreaFilled(false);
+        excluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                excluirActionPerformed(evt);
+            }
+        });
+
+        sair1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gisele Vieira\\Downloads\\VOLTARR (3).png")); // NOI18N
+        sair1.setToolTipText("Sair");
+        sair1.setBorder(null);
+        sair1.setContentAreaFilled(false);
+        sair1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        sair1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sair1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(sair1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(tituloProvaA)
+                .addGap(599, 599, 599))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGap(116, 116, 116)
-                                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(49, 49, 49))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(novoConteudoProgramatico, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(27, 27, 27)))
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 963, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(imprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(excluir))))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(555, 555, 555)
-                        .addComponent(tituloCunteudoProg2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(38, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(116, 116, 116)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addComponent(provasAnteriores)
-                        .addGap(68, 68, 68))
-                    .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 682, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addContainerGap()
+                        .addComponent(addProvaA, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 963, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 665, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(161, 161, 161)
-                        .addComponent(obrasLiterarias)))
-                .addGap(40, 40, 40))
+                        .addComponent(imprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(excluir)))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
+                .addGap(48, 48, 48)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(tituloProvaA, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sair1))
+                .addGap(39, 39, 39)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(tituloCunteudoProg2, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addComponent(novoConteudoProgramatico, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addProvaA, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
@@ -294,37 +289,25 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
                             .addComponent(imprimir))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 577, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(56, 56, 56)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(obrasLiterarias)
-                    .addComponent(provasAnteriores))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
-
-        jScrollPane1.setViewportView(jPanel4);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jScrollPane1)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 766, Short.MAX_VALUE))
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -345,6 +328,22 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_sairActionPerformed
 
+    private void addProvaAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addProvaAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addProvaAActionPerformed
+
+    private void imprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imprimirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_imprimirActionPerformed
+
+    private void excluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_excluirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_excluirActionPerformed
+
+    private void sair1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sair1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sair1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -362,44 +361,39 @@ public class ConteudoProgramaticoAdm extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ConteudoProgramaticoAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(provasAnterioresAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ConteudoProgramaticoAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(provasAnterioresAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ConteudoProgramaticoAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(provasAnterioresAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ConteudoProgramaticoAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(provasAnterioresAdm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ConteudoProgramaticoAdm().setVisible(true);
+                new provasAnterioresAdm().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton addProvaA;
     private javax.swing.JButton excluir;
     private javax.swing.JButton imprimir;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
     public javax.swing.JTable jTable1;
-    private javax.swing.JButton novoConteudoProgramatico;
-    private javax.swing.JButton obrasLiterarias;
     private javax.swing.JPanel previzuPDF;
-    private javax.swing.JButton provasAnteriores;
     private javax.swing.JButton sair;
-    private javax.swing.JLabel tituloCunteudoProg2;
+    private javax.swing.JButton sair1;
+    private javax.swing.JLabel tituloProvaA;
     // End of variables declaration//GEN-END:variables
 }
